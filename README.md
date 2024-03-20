@@ -1,6 +1,6 @@
 # Devoir de XSLT
 
-## Transcription et encodage de contrats de mariage d'ouvrières en linge parisiennes du XVIIIème siècle, issus du minutier central des notaires des Archives nationales
+## Transformation XSLT d'un encodage de contrats de mariage d'ouvrières en linge parisiennes du XVIIIème siècle, issus du minutier central des notaires des Archives nationales
 
 Ce repository est constitué de :
 
