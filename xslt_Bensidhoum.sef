@@ -1,0 +1,4568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://ns.saxonica.com/xslt/export"
+ xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:java-type="http://saxon.sf.net/java-type"
+ xmlns:vv="http://saxon.sf.net/generated-variable" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ when="2024-03-19T12:14:00.939+01:00" id="0" version="20" packageVersion="1" saxonProduct="SAXON-EE"
+ saxonVersion="10.6" buildDateTime="2024-03-19T12:14:00.939+01:00" target="EE" targetVersion="1"
+ relocatable="false" implicit="true">
+ <co id="0" binds="">
+  <globalVariable name="Q{}div_css" as="1ND" line="212"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="212"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t"
+    text="&#xA;            background-color: rgba(250, 250, 240, 0.9);&#xA;            border: 5px solid rgba(0, 0, 0, 0.1);&#xA;            padding: 20px;&#xA;            text-align: justify;&#xA;            margin-bottom: 8%;&#xA;        ">
+    <valueOf line="213" flags="l">
+     <str
+      val="&#xA;            background-color: rgba(250, 250, 240, 0.9);&#xA;            border: 5px solid rgba(0, 0, 0, 0.1);&#xA;            padding: 20px;&#xA;            text-align: justify;&#xA;            margin-bottom: 8%;&#xA;        "
+     />
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="1" binds="2 3 4 0 5 0 5 0 5 0 5 5 6 7 8 9 10 11">
+  <template name="Q{}facs3" flags="os" line="719"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="720"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_3" bSlot="17"/>
+     </data>
+    </convert>
+    <elem role="content" line="721" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="722" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="723" name="body" nsuri="" flags="l">
+       <sequence line="724">
+        <att name="style" flags="l">
+         <convert line="725" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="727" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="728" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c3p1"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="729" name="style" flags="l">
+           <convert line="730" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="732" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="733" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-IV-573(1).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="734" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-IV-573(1).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="737" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="739">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <subscript>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                    <int val="3"/>
+                   </subscript>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="titre"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="740" name="p" nsuri="" flags="l">
+              <copyOf line="741" flags="c">
+               <dot type="1NE"/>
+              </copyOf>
+             </elem>
+            </forEach>
+            <elem line="744" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="745">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="3"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="1">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="22">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="746" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1672728801"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="748" bSlot="4">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="753" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p2"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="754" name="style" flags="l">
+           <convert line="755" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="5"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="757" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="758" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-IV-573(2).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="759" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-IV-573(2).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="762" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="763">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="3"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="23">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="51">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="764" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n805078870"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="766" bSlot="6">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="771" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p3"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="772" name="style" flags="l">
+           <convert line="773" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="7"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="775" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="776" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-IV-573(3).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="777" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-IV-573(3).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="780" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="781">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="3"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="52">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="80">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="782" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n648125063"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="784" bSlot="8">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="789" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p4"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="790" name="style" flags="l">
+           <convert line="791" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="9"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="793" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="794" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-IV-573(4).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="795" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-IV-573(4).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="798" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="799">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="3"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="81">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="106">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="800" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n415103324"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="802" bSlot="10">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+            <elem line="805" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="806">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <subscript>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                    <int val="3"/>
+                   </subscript>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="signatures"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="807" name="p" nsuri="" flags="l">
+              <applyT line="808" bSlot="11">
+               <axis role="select" name="child" nodeTest="N"/>
+              </applyT>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="813" name="div" nsuri="" flags="l">
+         <elem line="814" name="p" nsuri="" flags="l">
+          <sequence>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1821758024" bSlot="12"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 1"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg451815518" bSlot="13"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 2"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg208946055" bSlot="14"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 3"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg192848128" bSlot="15"/>
+             </att>
+             <valueOf flags="Sl">
+              <str val="Tableau"/>
+             </valueOf>
+            </sequence>
+           </elem>
+          </sequence>
+         </elem>
+        </elem>
+        <copyOf line="817" flags="c">
+         <gVarRef name="Q{}footer" bSlot="16"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="12" binds="">
+  <globalVariable name="Q{}facs_2" as="1ND" line="39"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="39"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="40" flags="Sl">
+     <str val="facs2.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="2" binds="">
+  <globalVariable name="Q{}header" as="1ND" line="49"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="49"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <elem line="50" name="head" nsuri="" flags="l">
+     <sequence line="51">
+      <elem name="meta" nsuri="" flags="l">
+       <sequence>
+        <att name="name" flags="l">
+         <str val="viewport"/>
+        </att>
+        <att name="content" flags="l">
+         <str val="width=device-width, initial-scale=1"/>
+        </att>
+       </sequence>
+      </elem>
+      <elem line="52" name="title" nsuri="" flags="l">
+       <valueOf flags="l">
+        <fn name="string-join">
+         <convert from="AZ" to="AS">
+          <data>
+           <slash simple="2">
+            <slash simple="2">
+             <slash simple="2">
+              <slash simple="2">
+               <slash simple="1">
+                <root/>
+                <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiCorpus"/>
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiHeader"/>
+              </slash>
+              <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}fileDesc"/>
+             </slash>
+             <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}titleStmt"/>
+            </slash>
+            <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}title"/>
+           </slash>
+          </data>
+         </convert>
+         <str val=" "/>
+        </fn>
+       </valueOf>
+      </elem>
+      <elem line="53" name="meta" nsuri="" flags="l">
+       <sequence>
+        <att name="name" flags="l">
+         <str val="description"/>
+        </att>
+        <att line="54" name="content" flags="l">
+         <fn line="55" name="string-join">
+          <convert from="AZ" to="AS">
+           <data>
+            <mergeAdj>
+             <sequence>
+              <valueOf>
+               <fn name="string-join">
+                <convert from="A" to="AS">
+                 <data>
+                  <fn name="key">
+                   <str val="Q{http://saxon.sf.net/}kk101"/>
+                   <str val="a"/>
+                   <root/>
+                  </fn>
+                 </data>
+                </convert>
+                <str val=" "/>
+               </fn>
+              </valueOf>
+              <valueOf>
+               <str val=" par "/>
+              </valueOf>
+              <valueOf>
+               <fn name="string-join">
+                <convert from="AZ" to="AS">
+                 <data>
+                  <docOrder intra="1">
+                   <slash simple="2">
+                    <slash simple="1">
+                     <root/>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}titleStmt"
+                     />
+                    </slash>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}author"/>
+                   </slash>
+                  </docOrder>
+                 </data>
+                </convert>
+                <str val=" "/>
+               </fn>
+              </valueOf>
+             </sequence>
+            </mergeAdj>
+           </data>
+          </convert>
+          <str val=""/>
+         </fn>
+        </att>
+       </sequence>
+      </elem>
+      <elem line="58" name="meta" nsuri="" flags="l">
+       <sequence>
+        <att name="name" flags="l">
+         <str val="author"/>
+        </att>
+        <att line="59" name="content" flags="l">
+         <convert line="60" from="AZ" to="AS">
+          <cast flags="a" as="1AZ">
+           <fn name="string-join">
+            <convert from="AZ" to="AS">
+             <data>
+              <docOrder intra="1">
+               <slash simple="2">
+                <slash simple="1">
+                 <root/>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}editionStmt"/>
+                </slash>
+                <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}editor"/>
+               </slash>
+              </docOrder>
+             </data>
+            </convert>
+            <str val=" "/>
+           </fn>
+          </cast>
+         </convert>
+        </att>
+       </sequence>
+      </elem>
+      <elem line="63" name="style" nsuri="" flags="l">
+       <valueOf flags="l">
+        <str
+         val="&#xA;                header {&#xA;                background-color: #333;&#xA;                color: #fff;&#xA;                padding: 10px;&#xA;                text-align: center;&#xA;                }&#xA;                nav {&#xA;                background-color: rgba(197, 221, 207, 0.9);&#xA;                }&#xA;                nav ul {&#xA;                list-style-type: none;&#xA;                margin: 0;&#xA;                padding: 0;&#xA;                text-align: center;&#xA;                }&#xA;                nav ul li {&#xA;                display: inline-block;&#xA;                position: relative;&#xA;                padding: 10px 20px;&#xA;                cursor: pointer;&#xA;                font-size: 20px;&#xA;                }&#xA;                nav ul li a {&#xA;                font-size: 20px;&#xA;                }&#xA;                nav ul li:hover {&#xA;                background-color: #518C97;&#xA;                }&#xA;                nav ul li ul {&#xA;                display: none;&#xA;                position: absolute;&#xA;                top: 100%;&#xA;                left: 0;&#xA;                background-color: #97BCAE;&#xA;                min-width: 150px;&#xA;                }&#xA;                nav ul li ul li a {&#xA;                font-size: 16px;&#xA;                }&#xA;                nav ul li:hover ul {&#xA;                display: block;&#xA;                }&#xA;                nav ul li ul li {&#xA;                display: block;&#xA;                padding: 10px;&#xA;                }&#xA;                nav ul li ul li:hover {&#xA;                background-color: #555;&#xA;                }&#xA;                nav ul li a:visited {&#xA;                color: #B1545E; &#xA;                }&#xA;                nav {&#xA;                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus intense */&#xA;                border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Bordure en dessous */&#xA;                position: relative; /* Assurez-vous que la nav bar a une position relative */&#xA;                z-index: 1000; /* Définissez un z-index élevé pour que la nav bar apparaisse au-dessus des autres éléments */&#xA;                }&#xA;                .container {&#xA;                display: flex; /* Utilisation de flexbox pour positionner les éléments côte à côte */&#xA;                align-items: center; /* Centrage vertical des éléments */&#xA;                }&#xA;                .image {&#xA;                flex: 2; /* La moitié de l&#39;espace disponible pour l&#39;image */&#xA;                padding-right: 20px; /* Marge à droite pour séparer l&#39;image du texte */&#xA;                overflow: hidden; /* Masque le dépassement de l&#39;image */&#xA;                position: relative; /* Position relative pour contenir le curseur */&#xA;                }&#xA;                .image img {&#xA;                width: 100%; /* Redimensionne l&#39;image pour remplir toute la largeur du conteneur */&#xA;                height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */&#xA;                transition: transform 0.3s ease; /* Ajoute une transition fluide au zoom */&#xA;                }&#xA;                .image:hover {&#xA;                cursor: zoom-in; /* Changement de curseur pour indiquer que l&#39;image est cliquable */&#xA;                }&#xA;                .text {&#xA;                flex: 1; /* La moitié de l&#39;espace disponible pour le texte */&#xA;                }&#xA;                div a:visited {&#xA;                color: #B1545E; /* Changer la couleur des liens visités ici */&#xA;                }&#xA;                .tg {&#xA;                border-collapse: collapse;&#xA;                border-spacing: 0;&#xA;                width: 100%;&#xA;                background-color: #D9EBDB; &#xA;                }&#xA;                &#xA;                /* Styles for table headers */&#xA;                .tg th {&#xA;                background-color: #65A8B3; /* Couleur légèrement plus foncée pour les en-têtes */&#xA;                color: white; /* Texte en blanc */&#xA;                font-weight: bold; /* Texte en gras */&#xA;                text-align: center; /* Centré */&#xA;                border: 1px solid #dddddd; /* Bordure grise */&#xA;                padding: 8px;&#xA;                }&#xA;                &#xA;                /* Styles for the table cells */&#xA;                .tg td {&#xA;                border: 1px solid #dddddd; /* Bordure grise */&#xA;                padding: 8px;&#xA;                text-align: left;&#xA;                }&#xA;                &#xA;                /* Hover effect for table cells */&#xA;                .tg td:hover, .tg th:hover {&#xA;                background-color: #F8E0B7; /* Couleur légèrement plus claire au survol */&#xA;                }&#xA;                .content {&#xA;                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus intense */&#xA;                border: 2px solid rgba(0, 0, 0, 0.1); /* Bordure autour de l&#39;élément */&#xA;                padding: 20px; /* Marge intérieure pour espacement */&#xA;                background-color: rgba(250, 250, 240, 0.9);&#xA;                }&#xA;                &#xA;                div a:visited {&#xA;                color: #B1545E; /* Changer la couleur des liens visités ici */&#xA;                }&#xA;                .tg th:hover {&#xA;                background-color: #65A8B3; /* Supprime l&#39;effet hover sur les titres de colonnes */&#xA;                }&#xA;                &#xA;            "
+        />
+       </valueOf>
+      </elem>
+     </sequence>
+    </elem>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="13" binds="2 3 4 0 5 0 5 0 5 0 5 5 6 7 8 9 10 12">
+  <template name="Q{}facs2" flags="os" line="615"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="616"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_2" bSlot="17"/>
+     </data>
+    </convert>
+    <elem role="content" line="617" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="618" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="619" name="body" nsuri="" flags="l">
+       <sequence line="620">
+        <att name="style" flags="l">
+         <convert line="621" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="623" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="624" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p1"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="625" name="style" flags="l">
+           <convert line="626" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="628" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="629" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-LXIX-691(1).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="630" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-LXIX-691(1).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="633" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="635">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <subscript>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                    <int val="2"/>
+                   </subscript>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="titre"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="636" name="p" nsuri="" flags="l">
+              <copyOf line="637" flags="c">
+               <dot type="1NE"/>
+              </copyOf>
+             </elem>
+            </forEach>
+            <elem line="640" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="641">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="2"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="1">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="18">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="642" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n538246226"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="644" bSlot="4">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="649" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p2"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="650" name="style" flags="l">
+           <convert line="651" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="5"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="653" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="654" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-LXIX-691(2).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="655" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-LXIX-691(2).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="658" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="659">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="2"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="19">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="48">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="660" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1829601509"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="662" bSlot="6">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="667" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p3"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="668" name="style" flags="l">
+           <convert line="669" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="7"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="671" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="672" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-LXIX-691(3).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="673" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-LXIX-691(3).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="676" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="677">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="2"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="49">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="77">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="678" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1042151625"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="680" bSlot="8">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="685" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c2p4"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="686" name="style" flags="l">
+           <convert line="687" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="9"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="689" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="690" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-LXIX-691(4).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="691" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-LXIX-691(4).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="694" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="695">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <subscript>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   <int val="2"/>
+                  </subscript>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="78">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="97">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="696" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1508778045"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="698" bSlot="10">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+            <elem line="701" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="702">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <subscript>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                    <int val="2"/>
+                   </subscript>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="signatures"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="703" name="p" nsuri="" flags="l">
+              <applyT line="704" bSlot="11">
+               <axis role="select" name="child" nodeTest="N"/>
+              </applyT>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="709" name="div" nsuri="" flags="l">
+         <elem line="710" name="p" nsuri="" flags="l">
+          <sequence>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1821758024" bSlot="12"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 1"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg451815518" bSlot="13"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 2"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg208946055" bSlot="14"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 3"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg192848128" bSlot="15"/>
+             </att>
+             <valueOf flags="Sl">
+              <str val="Tableau"/>
+             </valueOf>
+            </sequence>
+           </elem>
+          </sequence>
+         </elem>
+        </elem>
+        <copyOf line="712" flags="c">
+         <gVarRef name="Q{}footer" bSlot="16"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="14" binds="15">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1622339192" as="1AS" line="297"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="297" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat1" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="16" binds="17">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg2146489664" as="1AS" line="297"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="297" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat2" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="6" binds="18">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1821758024" as="1AS" line="605"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="605" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_1" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="4" binds="19 15 17 20 18 12 11 21">
+  <globalVariable name="Q{}body_header" as="1ND" line="233"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="233"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <sequence line="234">
+     <elem name="div" nsuri="" flags="l">
+      <sequence>
+       <att name="style" flags="l">
+        <str val="text-align: center; margin-bottom: 8%; margin-right: 20%; margin-left: 20%"/>
+       </att>
+       <elem line="235" name="h1" nsuri="" flags="l">
+        <elem name="i" nsuri="" flags="l">
+         <valueOf flags="l">
+          <fn name="string-join">
+           <convert from="AZ" to="AS">
+            <data>
+             <docOrder intra="1">
+              <slash simple="2">
+               <slash simple="2">
+                <slash simple="2">
+                 <slash simple="1">
+                  <root/>
+                  <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiCorpus"/>
+                 </slash>
+                 <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiHeader"/>
+                </slash>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}titleStmt"/>
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}title"/>
+              </slash>
+             </docOrder>
+            </data>
+           </convert>
+           <str val=" "/>
+          </fn>
+         </valueOf>
+        </elem>
+       </elem>
+      </sequence>
+     </elem>
+     <elem line="237" name="nav" nsuri="" flags="l">
+      <elem line="238" name="ul" nsuri="" flags="l">
+       <sequence line="239">
+        <elem name="li" nsuri="" flags="l">
+         <elem name="a" nsuri="" flags="l">
+          <sequence>
+           <att name="href" flags="l">
+            <fn name="concat">
+             <str val="./"/>
+             <convert from="AZ" to="AS">
+              <data>
+               <gVarRef name="Q{}accueil" bSlot="0"/>
+              </data>
+             </convert>
+            </fn>
+           </att>
+           <valueOf flags="Sl">
+            <str val="Accueil"/>
+           </valueOf>
+          </sequence>
+         </elem>
+        </elem>
+        <elem line="240" name="li" nsuri="" flags="l">
+         <sequence>
+          <valueOf flags="l">
+           <str val="Édition numérique&#xA;                    "/>
+          </valueOf>
+          <elem line="241" name="ul" nsuri="" flags="l">
+           <sequence line="242">
+            <elem name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}contrat1" bSlot="1"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <first>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                         </first>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+            <elem line="243" name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}contrat2" bSlot="2"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <subscript>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                          <int val="2"/>
+                         </subscript>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+            <elem line="244" name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}contrat3" bSlot="3"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <subscript>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                          <int val="3"/>
+                         </subscript>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="247" name="li" nsuri="" flags="l">
+         <sequence>
+          <valueOf flags="l">
+           <str val="Édition facsimilé&#xA;                    "/>
+          </valueOf>
+          <elem line="248" name="ul" nsuri="" flags="l">
+           <sequence line="249">
+            <elem name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}facs_1" bSlot="4"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <first>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                         </first>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+            <elem line="250" name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}facs_2" bSlot="5"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <subscript>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                          <int val="2"/>
+                         </subscript>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+            <elem line="251" name="li" nsuri="" flags="l">
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <fn name="concat">
+                 <str val="./"/>
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <gVarRef name="Q{}facs_3" bSlot="6"/>
+                  </data>
+                 </convert>
+                </fn>
+               </att>
+               <valueOf flags="l">
+                <fn name="string-join">
+                 <convert from="AZ" to="AS">
+                  <data>
+                   <docOrder intra="1">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <slash simple="2">
+                       <docOrder intra="1">
+                        <slash>
+                         <slash simple="1">
+                          <root/>
+                          <axis name="descendant-or-self" nodeTest="N"/>
+                         </slash>
+                         <subscript>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                          <int val="3"/>
+                         </subscript>
+                        </slash>
+                       </docOrder>
+                       <axis name="descendant"
+                        nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+                      </slash>
+                     </docOrder>
+                     <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                    </slash>
+                   </docOrder>
+                  </data>
+                 </convert>
+                 <str val=" "/>
+                </fn>
+               </valueOf>
+              </sequence>
+             </elem>
+            </elem>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="254" name="li" nsuri="" flags="l">
+         <elem name="a" nsuri="" flags="l">
+          <sequence>
+           <att name="href" flags="l">
+            <fn name="concat">
+             <str val="./"/>
+             <convert from="AZ" to="AS">
+              <data>
+               <gVarRef name="Q{}tableau" bSlot="7"/>
+              </data>
+             </convert>
+            </fn>
+           </att>
+           <valueOf flags="l">
+            <str val="Tableau récapitulatif"/>
+           </valueOf>
+          </sequence>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+     </elem>
+    </sequence>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="22" binds="2 3 4 0 5 0 5 0 5 0 5 5 6 7 8 9 10 18">
+  <template name="Q{}facs1" flags="os" line="509"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="510"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_1" bSlot="17"/>
+     </data>
+    </convert>
+    <elem role="content" line="511" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="512" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="513" name="body" nsuri="" flags="l">
+       <sequence line="514">
+        <att name="style" flags="l">
+         <convert line="515" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="517" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="518" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c1p1"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="519" name="style" flags="l">
+           <convert line="520" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="522" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="523" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-XXVIII-468(1).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="524" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-XXVIII-468(1).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="527" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="529">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <first>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   </first>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="titre"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="530" name="p" nsuri="" flags="l">
+              <copyOf line="531" flags="c">
+               <dot type="1NE"/>
+              </copyOf>
+             </elem>
+            </forEach>
+            <elem line="534" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="535">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <first>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                  </first>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="1">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="20">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="536" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1939993223"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="538" bSlot="4">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="543" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c1p2"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="544" name="style" flags="l">
+           <convert line="545" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="5"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="547" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="548" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-XXVIII-468(2).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="549" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-XXVIII-468(2).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="552" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="553">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <first>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                  </first>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="21">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="36">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="554" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n1983833561"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="556" bSlot="6">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="561" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c1p3"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="562" name="style" flags="l">
+           <convert line="563" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="7"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="565" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="566" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-XXVIII-468(3).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="567" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-XXVIII-468(3).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="570" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="571">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <first>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                  </first>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="37">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="71">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="572" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n555782153"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="574" bSlot="8">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="579" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="id" flags="l">
+           <str val="c1p4"/>
+          </att>
+          <att name="class" flags="l">
+           <str val="container"/>
+          </att>
+          <att line="580" name="style" flags="l">
+           <convert line="581" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="9"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="583" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="image"/>
+            </att>
+            <elem line="584" name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <str val="./img/MC-ET-XXVIII-468(4).jpg"/>
+              </att>
+              <att name="target" flags="l">
+               <str val="_blank"/>
+              </att>
+              <elem line="585" name="img" nsuri="" flags="l">
+               <att name="src" flags="l">
+                <str val="./img/MC-ET-XXVIII-468(4).jpg"/>
+               </att>
+              </elem>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+          <elem line="588" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="text"/>
+            </att>
+            <att name="style" flags="l">
+             <str val="text-align:justify"/>
+            </att>
+            <forEach line="589">
+             <filter flags="pb">
+              <docOrder intra="1">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash>
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant-or-self" nodeTest="N"/>
+                  </slash>
+                  <first>
+                   <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                  </first>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+               </slash>
+              </docOrder>
+              <and op="and">
+               <compareToInt op="ge" val="72">
+                <fn name="position"/>
+               </compareToInt>
+               <compareToInt op="le" val="91">
+                <fn name="position"/>
+               </compareToInt>
+              </and>
+             </filter>
+             <elem line="590" name="p" nsuri="" flags="l">
+              <sequence>
+               <valueOf flags="Sl">
+                <str val="["/>
+               </valueOf>
+               <valueOf flags="l">
+                <numSeqFmt>
+                 <filter role="value" flags="b">
+                  <fn name="accumulator-before">
+                   <str val="Q{http://ns.saxonica.com/anonymous-type}n373320487"/>
+                  </fn>
+                  <compareToInt op="ne" val="0">
+                   <dot flags="a"/>
+                  </compareToInt>
+                 </filter>
+                 <str role="format" val="1"/>
+                 <str role="startAt" val="1"/>
+                </numSeqFmt>
+               </valueOf>
+               <valueOf flags="l">
+                <str val="]&#xA;                                     "/>
+               </valueOf>
+               <applyT line="592" bSlot="10">
+                <axis role="select" name="child" nodeTest="N"/>
+               </applyT>
+              </sequence>
+             </elem>
+            </forEach>
+            <elem line="595" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <forEach line="596">
+             <docOrder intra="1">
+              <slash simple="2">
+               <filter flags="b">
+                <slash simple="2">
+                 <docOrder intra="1">
+                  <slash>
+                   <slash simple="1">
+                    <root/>
+                    <axis name="descendant-or-self" nodeTest="N"/>
+                   </slash>
+                   <first>
+                    <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                   </first>
+                  </slash>
+                 </docOrder>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+                </slash>
+                <vc op="eq" onEmpty="0" comp="CCC">
+                 <cast flags="ae" as="?AS">
+                  <attVal name="Q{}type" chk="0"/>
+                 </cast>
+                 <str val="signatures"/>
+                </vc>
+               </filter>
+               <axis name="child" nodeTest="NE"/>
+              </slash>
+             </docOrder>
+             <elem line="597" name="p" nsuri="" flags="l">
+              <applyT line="598" bSlot="11">
+               <axis role="select" name="child" nodeTest="N"/>
+              </applyT>
+             </elem>
+            </forEach>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="604" name="div" nsuri="" flags="l">
+         <elem line="605" name="p" nsuri="" flags="l">
+          <sequence>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1821758024" bSlot="12"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 1"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg451815518" bSlot="13"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 2"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg208946055" bSlot="14"/>
+             </att>
+             <valueOf flags="l">
+              <str val="Fac-similé 3"/>
+             </valueOf>
+            </sequence>
+           </elem>
+           <valueOf flags="l">
+            <str val=" – "/>
+           </valueOf>
+           <elem name="a" nsuri="" flags="l">
+            <sequence>
+             <att name="href" flags="l">
+              <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg192848128" bSlot="15"/>
+             </att>
+             <valueOf flags="Sl">
+              <str val="Tableau"/>
+             </valueOf>
+            </sequence>
+           </elem>
+          </sequence>
+         </elem>
+        </elem>
+        <copyOf line="607" flags="c">
+         <gVarRef name="Q{}footer" bSlot="16"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="11" binds="">
+  <globalVariable name="Q{}facs_3" as="1ND" line="43"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="43"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="44" flags="Sl">
+     <str val="facs3.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="18" binds="">
+  <globalVariable name="Q{}facs_1" as="1ND" line="35"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="35"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="36" flags="Sl">
+     <str val="facs1.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="21" binds="">
+  <globalVariable name="Q{}tableau" as="1ND" line="31"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="31"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="32" flags="Sl">
+     <str val="tableau.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="23" binds="2 3 4 0 14 16 24 9 10 19">
+  <template name="Q{}home" flags="os" line="276"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="277"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}accueil" bSlot="9"/>
+     </data>
+    </convert>
+    <elem role="content" line="278" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="279" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="280" name="body" nsuri="" flags="l">
+       <sequence line="281">
+        <att name="style" flags="l">
+         <convert line="282" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="284" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="286" name="div" nsuri="" flags="l">
+         <sequence line="287">
+          <att name="style" flags="l">
+           <convert line="288" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="290" name="div" nsuri="" flags="l">
+           <sequence line="291">
+            <copyOf flags="c">
+             <docOrder intra="1">
+              <slash simple="2">
+               <slash simple="2">
+                <docOrder intra="1">
+                 <slash simple="2">
+                  <slash simple="1">
+                   <root/>
+                   <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiCorpus"/>
+                  </slash>
+                  <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}teiHeader"/>
+                 </slash>
+                </docOrder>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}publicationStmt"
+                />
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+              </slash>
+             </docOrder>
+            </copyOf>
+            <copyOf line="292" flags="c">
+             <docOrder intra="1">
+              <slash simple="2">
+               <slash simple="1">
+                <root/>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}sourceDesc"/>
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+              </slash>
+             </docOrder>
+            </copyOf>
+            <copyOf line="293" flags="c">
+             <docOrder intra="1">
+              <slash simple="2">
+               <slash simple="1">
+                <root/>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}projectDesc"/>
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+              </slash>
+             </docOrder>
+            </copyOf>
+            <copyOf line="294" flags="c">
+             <docOrder intra="1">
+              <slash simple="2">
+               <slash simple="1">
+                <root/>
+                <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}normalization"/>
+               </slash>
+               <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+              </slash>
+             </docOrder>
+            </copyOf>
+           </sequence>
+          </elem>
+          <elem line="296" name="div" nsuri="" flags="l">
+           <elem line="297" name="p" nsuri="" flags="l">
+            <sequence>
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1622339192" bSlot="4"/>
+               </att>
+               <valueOf flags="l">
+                <str val="Contrat 1"/>
+               </valueOf>
+              </sequence>
+             </elem>
+             <valueOf flags="l">
+              <str val=" – "/>
+             </valueOf>
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg2146489664" bSlot="5"/>
+               </att>
+               <valueOf flags="l">
+                <str val="Contrat 2"/>
+               </valueOf>
+              </sequence>
+             </elem>
+             <valueOf flags="l">
+              <str val=" – "/>
+             </valueOf>
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg323485106" bSlot="6"/>
+               </att>
+               <valueOf flags="l">
+                <str val="Contrat 3"/>
+               </valueOf>
+              </sequence>
+             </elem>
+             <valueOf flags="l">
+              <str val=" – "/>
+             </valueOf>
+             <elem name="a" nsuri="" flags="l">
+              <sequence>
+               <att name="href" flags="l">
+                <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg192848128" bSlot="7"/>
+               </att>
+               <valueOf flags="Sl">
+                <str val="Tableau"/>
+               </valueOf>
+              </sequence>
+             </elem>
+            </sequence>
+           </elem>
+          </elem>
+         </sequence>
+        </elem>
+        <copyOf line="300" flags="c">
+         <gVarRef name="Q{}footer" bSlot="8"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="25" binds="2 3 4 0 5 10 20">
+  <template name="Q{}contrat3" flags="os" line="387"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="388"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat3" bSlot="6"/>
+     </data>
+    </convert>
+    <elem role="content" line="389" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="390" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="391" name="body" nsuri="" flags="l">
+       <sequence line="392">
+        <att name="style" flags="l">
+         <convert line="393" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="395" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="396" name="div" nsuri="" flags="l">
+         <sequence line="397">
+          <att name="style" flags="l">
+           <convert line="398" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="400" name="h3" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: center; padding-bottom: 2%;"/>
+            </att>
+            <valueOf flags="l">
+             <str val="Contrat III."/>
+            </valueOf>
+           </sequence>
+          </elem>
+          <elem line="401" name="h4" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: justify"/>
+            </att>
+            <valueOf flags="l">
+             <fn name="string-join">
+              <convert from="AZ" to="AS">
+               <data>
+                <docOrder intra="1">
+                 <slash simple="2">
+                  <docOrder intra="1">
+                   <slash simple="2">
+                    <fn name="key">
+                     <str val="Q{http://saxon.sf.net/}kk102"/>
+                     <str val="3"/>
+                     <root/>
+                    </fn>
+                    <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}msDesc"/>
+                   </slash>
+                  </docOrder>
+                  <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                 </slash>
+                </docOrder>
+               </data>
+              </convert>
+              <str val=" "/>
+             </fn>
+            </valueOf>
+           </sequence>
+          </elem>
+          <applyT line="402" bSlot="4">
+           <docOrder role="select" intra="1">
+            <slash simple="2">
+             <fn name="key">
+              <str val="Q{http://saxon.sf.net/}kk102"/>
+              <str val="3"/>
+              <root/>
+             </fn>
+             <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+            </slash>
+           </docOrder>
+          </applyT>
+         </sequence>
+        </elem>
+        <copyOf line="404" flags="c">
+         <gVarRef name="Q{}footer" bSlot="5"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="26" binds="2 3 4 0 5 10 17">
+  <template name="Q{}contrat2" flags="os" line="346"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="347"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat2" bSlot="6"/>
+     </data>
+    </convert>
+    <elem role="content" line="348" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="349" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="350" name="body" nsuri="" flags="l">
+       <sequence line="351">
+        <att name="style" flags="l">
+         <convert line="352" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="354" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="355" name="div" nsuri="" flags="l">
+         <sequence line="356">
+          <att name="style" flags="l">
+           <convert line="357" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="359" name="h3" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: center; padding-bottom: 2%;"/>
+            </att>
+            <valueOf flags="l">
+             <str val="Contrat II."/>
+            </valueOf>
+           </sequence>
+          </elem>
+          <elem line="360" name="h4" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: justify"/>
+            </att>
+            <valueOf flags="l">
+             <fn name="string-join">
+              <convert from="AZ" to="AS">
+               <data>
+                <docOrder intra="1">
+                 <slash simple="2">
+                  <docOrder intra="1">
+                   <slash simple="2">
+                    <fn name="key">
+                     <str val="Q{http://saxon.sf.net/}kk102"/>
+                     <str val="2"/>
+                     <root/>
+                    </fn>
+                    <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}msDesc"/>
+                   </slash>
+                  </docOrder>
+                  <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                 </slash>
+                </docOrder>
+               </data>
+              </convert>
+              <str val=" "/>
+             </fn>
+            </valueOf>
+           </sequence>
+          </elem>
+          <applyT line="361" bSlot="4">
+           <docOrder role="select" intra="1">
+            <slash simple="2">
+             <fn name="key">
+              <str val="Q{http://saxon.sf.net/}kk102"/>
+              <str val="2"/>
+              <root/>
+             </fn>
+             <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+            </slash>
+           </docOrder>
+          </applyT>
+         </sequence>
+        </elem>
+        <copyOf line="363" flags="c">
+         <gVarRef name="Q{}footer" bSlot="5"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="27" binds="2 3 4 0 5 10 15">
+  <template name="Q{}contrat1" flags="os" line="307"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="0">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="308"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat1" bSlot="6"/>
+     </data>
+    </convert>
+    <elem role="content" line="309" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="310" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="311" name="body" nsuri="" flags="l">
+       <sequence line="312">
+        <att name="style" flags="l">
+         <convert line="313" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="315" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="316" name="div" nsuri="" flags="l">
+         <sequence line="317">
+          <att name="style" flags="l">
+           <convert line="318" from="AZ" to="AS">
+            <data>
+             <gVarRef name="Q{}div_css" bSlot="3"/>
+            </data>
+           </convert>
+          </att>
+          <elem line="320" name="h3" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: center; padding-bottom: 2%;"/>
+            </att>
+            <valueOf flags="l">
+             <str val="Contrat I."/>
+            </valueOf>
+           </sequence>
+          </elem>
+          <elem line="321" name="h4" nsuri="" flags="l">
+           <sequence>
+            <att name="style" flags="l">
+             <str val="text-align: justify"/>
+            </att>
+            <valueOf flags="l">
+             <fn name="string-join">
+              <convert from="AZ" to="AS">
+               <data>
+                <docOrder intra="1">
+                 <slash simple="2">
+                  <docOrder intra="1">
+                   <slash simple="2">
+                    <fn name="key">
+                     <str val="Q{http://saxon.sf.net/}kk102"/>
+                     <str val="1"/>
+                     <root/>
+                    </fn>
+                    <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}msDesc"/>
+                   </slash>
+                  </docOrder>
+                  <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}idno"/>
+                 </slash>
+                </docOrder>
+               </data>
+              </convert>
+              <str val=" "/>
+             </fn>
+            </valueOf>
+           </sequence>
+          </elem>
+          <applyT line="322" bSlot="4">
+           <docOrder role="select" intra="1">
+            <slash simple="2">
+             <fn name="key">
+              <str val="Q{http://saxon.sf.net/}kk102"/>
+              <str val="1"/>
+              <root/>
+             </fn>
+             <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+            </slash>
+           </docOrder>
+          </applyT>
+         </sequence>
+        </elem>
+        <copyOf line="324" flags="c">
+         <gVarRef name="Q{}footer" bSlot="5"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="28" binds="19">
+  <globalVariable name="Q{}return_home" as="1ND" line="224"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="224"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <elem line="225" name="i" nsuri="" flags="l">
+     <elem name="a" nsuri="" flags="l">
+      <sequence>
+       <att name="href" flags="l">
+        <fn name="concat">
+         <str val="./"/>
+         <data diag="0|1||fn:concat">
+          <gVarRef name="Q{}accueil" bSlot="0"/>
+         </data>
+        </fn>
+       </att>
+       <valueOf flags="l">
+        <str val="Revenir à l&#39;accueil"/>
+       </valueOf>
+      </sequence>
+     </elem>
+    </elem>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="20" binds="">
+  <globalVariable name="Q{}contrat3" as="1ND" line="27"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="27"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="28" flags="Sl">
+     <str val="contrat_3.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="17" binds="">
+  <globalVariable name="Q{}contrat2" as="1ND" line="23"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="23"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="24" flags="Sl">
+     <str val="contrat_2.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="15" binds="">
+  <globalVariable name="Q{}contrat1" as="1ND" line="19"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="19"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="20" flags="Sl">
+     <str val="contrat_1.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="29" binds="2 3 4 28 14 16 24 10 21">
+  <template name="Q{}tableau" flags="os" line="426"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" slots="1">
+   <resultDoc role="body" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="427"
+    global="indent=yes&#xA;omit-xml-declaration=no&#xA;method=html&#xA;" local="method=html&#xA;"
+    flags="a">
+    <convert role="href" from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}tableau" bSlot="8"/>
+     </data>
+    </convert>
+    <elem role="content" line="428" name="html" nsuri="">
+     <sequence>
+      <att name="lang" flags="l">
+       <str val="fr"/>
+      </att>
+      <copyOf line="429" flags="c">
+       <gVarRef name="Q{}header" bSlot="0"/>
+      </copyOf>
+      <elem line="430" name="body" nsuri="" flags="l">
+       <sequence line="431">
+        <att name="style" flags="l">
+         <convert line="432" from="AZ" to="AS">
+          <data>
+           <gVarRef name="Q{}body_css" bSlot="1"/>
+          </data>
+         </convert>
+        </att>
+        <copyOf line="434" flags="c">
+         <gVarRef name="Q{}body_header" bSlot="2"/>
+        </copyOf>
+        <elem line="435" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="content"/>
+          </att>
+          <elem line="436" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="container"/>
+            </att>
+            <elem line="437" name="table" nsuri="" flags="l">
+             <sequence>
+              <att name="class" flags="l">
+               <str val="tg"/>
+              </att>
+              <elem line="438" name="thead" nsuri="" flags="l">
+               <elem line="439" name="tr" nsuri="" flags="l">
+                <sequence line="440">
+                 <elem name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0pky"/>
+                   </att>
+                   <valueOf flags="Sl">
+                    <str val="Nom"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="441" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Prénom(s)"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="442" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="Sl">
+                    <str val="Adresse"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="443" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Profession de l&#39;époux"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="444" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Adresse de l&#39;époux"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="445" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Profession du père"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="446" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Adresse du père"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="447" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="l">
+                    <str val="Apports au mariage*"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="448" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="Sl">
+                    <str val="Douaire*"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                 <elem line="449" name="th" nsuri="" flags="l">
+                  <sequence>
+                   <att name="class" flags="l">
+                    <str val="tg-0lax"/>
+                   </att>
+                   <valueOf flags="Sl">
+                    <str val="Preciput*"/>
+                   </valueOf>
+                  </sequence>
+                 </elem>
+                </sequence>
+               </elem>
+              </elem>
+              <elem line="452" name="tbody" nsuri="" flags="l">
+               <forEach line="454">
+                <slash simple="1">
+                 <root/>
+                 <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+                </slash>
+                <elem line="455" name="tr" nsuri="" flags="l">
+                 <sequence>
+                  <att name="scope" flags="l">
+                   <str val="row"/>
+                  </att>
+                  <elem line="456" name="td" nsuri="" flags="l">
+                   <valueOf flags="l">
+                    <fn name="string-join">
+                     <convert from="AZ" to="AS">
+                      <data>
+                       <docOrder intra="1">
+                        <slash simple="2">
+                         <docOrder intra="1">
+                          <filter flags="b">
+                           <slash simple="2">
+                            <axis name="descendant"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                            <axis name="descendant"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                           </slash>
+                           <vc op="eq" onEmpty="0" comp="CCC">
+                            <cast flags="ae" as="?AS">
+                             <attVal name="Q{}role" chk="0"/>
+                            </cast>
+                            <str val="epouse"/>
+                           </vc>
+                          </filter>
+                         </docOrder>
+                         <axis name="descendant"
+                          nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}surname"/>
+                        </slash>
+                       </docOrder>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                  <elem line="457" name="td" nsuri="" flags="l">
+                   <valueOf flags="l">
+                    <fn name="string-join">
+                     <convert from="AZ" to="AS">
+                      <data>
+                       <docOrder intra="1">
+                        <slash simple="2">
+                         <docOrder intra="1">
+                          <filter flags="b">
+                           <slash simple="2">
+                            <axis name="descendant"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                            <axis name="descendant"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                           </slash>
+                           <vc op="eq" onEmpty="0" comp="CCC">
+                            <cast flags="ae" as="?AS">
+                             <attVal name="Q{}role" chk="0"/>
+                            </cast>
+                            <str val="epouse"/>
+                           </vc>
+                          </filter>
+                         </docOrder>
+                         <axis name="descendant"
+                          nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}forename"/>
+                        </slash>
+                       </docOrder>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                  <elem line="458" name="td" nsuri="" flags="l">
+                   <sequence>
+                    <valueOf flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epouse"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}placeName"
+                          />
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                    <valueOf flags="l">
+                     <str val=", &#xA;                                                "/>
+                    </valueOf>
+                    <valueOf line="459" flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epouse"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}settlement"
+                          />
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                    <valueOf flags="l">
+                     <str val=", &#xA;                                                "/>
+                    </valueOf>
+                    <valueOf line="460" flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epouse"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}country"/>
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                   </sequence>
+                  </elem>
+                  <elem line="461" name="td" nsuri="" flags="l">
+                   <valueOf flags="l">
+                    <fn name="string-join">
+                     <convert from="AZ" to="AS">
+                      <data>
+                       <docOrder intra="1">
+                        <slash simple="2">
+                         <filter flags="b">
+                          <slash simple="2">
+                           <axis name="descendant"
+                            nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                           <axis name="descendant"
+                            nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                          </slash>
+                          <vc op="eq" onEmpty="0" comp="CCC">
+                           <cast flags="ae" as="?AS">
+                            <attVal name="Q{}role" chk="0"/>
+                           </cast>
+                           <str val="epoux"/>
+                          </vc>
+                         </filter>
+                         <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}occupation"
+                         />
+                        </slash>
+                       </docOrder>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                  <elem line="462" name="td" nsuri="" flags="l">
+                   <sequence line="463">
+                    <valueOf flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epoux"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}placeName"
+                          />
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                    <valueOf line="462" flags="l">
+                     <str val=", &#xA;                                                "/>
+                    </valueOf>
+                    <valueOf line="464" flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epoux"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}settlement"
+                          />
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                    <valueOf line="462" flags="l">
+                     <str val=", &#xA;                                                "/>
+                    </valueOf>
+                    <valueOf line="465" flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <docOrder intra="1">
+                         <slash simple="2">
+                          <slash simple="2">
+                           <filter flags="b">
+                            <slash simple="2">
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                             <axis name="descendant"
+                              nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                            </slash>
+                            <vc op="eq" onEmpty="0" comp="CCC">
+                             <cast flags="ae" as="?AS">
+                              <attVal name="Q{}role" chk="0"/>
+                             </cast>
+                             <str val="epoux"/>
+                            </vc>
+                           </filter>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"
+                           />
+                          </slash>
+                          <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}country"/>
+                         </slash>
+                        </docOrder>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                   </sequence>
+                  </elem>
+                  <elem line="467" name="td" nsuri="" flags="l">
+                   <valueOf flags="l">
+                    <fn name="string-join">
+                     <convert from="AZ" to="AS">
+                      <data>
+                       <docOrder intra="1">
+                        <slash simple="2">
+                         <filter flags="b">
+                          <slash simple="2">
+                           <axis name="descendant"
+                            nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                           <axis name="descendant"
+                            nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                          </slash>
+                          <vc op="eq" onEmpty="0" comp="CCC">
+                           <cast flags="ae" as="?AS">
+                            <attVal name="Q{}role" chk="0"/>
+                           </cast>
+                           <str val="pere_epouse"/>
+                          </vc>
+                         </filter>
+                         <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}occupation"
+                         />
+                        </slash>
+                       </docOrder>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                  <elem line="468" name="td" nsuri="" flags="l">
+                   <choose line="469">
+                    <fn line="470" name="exists">
+                     <slash simple="2">
+                      <filter flags="b">
+                       <slash simple="2">
+                        <axis name="descendant"
+                         nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                        <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"
+                        />
+                       </slash>
+                       <vc op="eq" onEmpty="0" comp="CCC">
+                        <cast flags="ae" as="?AS">
+                         <attVal name="Q{}role" chk="0"/>
+                        </cast>
+                        <str val="pere_epouse"/>
+                       </vc>
+                      </filter>
+                      <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"/>
+                     </slash>
+                    </fn>
+                    <sequence line="470">
+                     <valueOf line="471" flags="l">
+                      <fn name="string-join">
+                       <convert from="AZ" to="AS">
+                        <data>
+                         <docOrder intra="1">
+                          <slash simple="2">
+                           <slash simple="2">
+                            <filter flags="b">
+                             <slash simple="2">
+                              <axis name="descendant"
+                               nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                              <axis name="descendant"
+                               nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                             </slash>
+                             <vc op="eq" onEmpty="0" comp="CCC">
+                              <cast flags="ae" as="?AS">
+                               <attVal name="Q{}role" chk="0"/>
+                              </cast>
+                              <str val="pere_epouse"/>
+                             </vc>
+                            </filter>
+                            <axis name="child"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"/>
+                           </slash>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}placeName"
+                           />
+                          </slash>
+                         </docOrder>
+                        </data>
+                       </convert>
+                       <str val=" "/>
+                      </fn>
+                     </valueOf>
+                     <valueOf flags="l">
+                      <str val=",  &#xA;                                                        "/>
+                     </valueOf>
+                     <valueOf line="472" flags="l">
+                      <fn name="string-join">
+                       <convert from="AZ" to="AS">
+                        <data>
+                         <docOrder intra="1">
+                          <slash simple="2">
+                           <slash simple="2">
+                            <filter flags="b">
+                             <slash simple="2">
+                              <axis name="descendant"
+                               nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                              <axis name="descendant"
+                               nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"/>
+                             </slash>
+                             <vc op="eq" onEmpty="0" comp="CCC">
+                              <cast flags="ae" as="?AS">
+                               <attVal name="Q{}role" chk="0"/>
+                              </cast>
+                              <str val="pere_epouse"/>
+                             </vc>
+                            </filter>
+                            <axis name="child"
+                             nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}residence"/>
+                           </slash>
+                           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}country"/>
+                          </slash>
+                         </docOrder>
+                        </data>
+                       </convert>
+                       <str val=" "/>
+                      </fn>
+                     </valueOf>
+                    </sequence>
+                    <true/>
+                    <elem line="474" name="i" nsuri="" flags="l">
+                     <valueOf line="475" flags="l">
+                      <str val="Information manquante"/>
+                     </valueOf>
+                    </elem>
+                   </choose>
+                  </elem>
+                  <elem line="479" name="td" nsuri="" flags="l">
+                   <let line="480" var="Q{}currentId" as="*NA" slot="0" eval="4">
+                    <slash simple="2">
+                     <docOrder intra="1">
+                      <filter flags="b">
+                       <slash simple="2">
+                        <axis name="descendant"
+                         nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}particDesc"/>
+                        <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}person"
+                        />
+                       </slash>
+                       <vc op="eq" onEmpty="0" comp="CCC">
+                        <cast flags="ae" as="?AS">
+                         <attVal name="Q{}role" chk="0"/>
+                        </cast>
+                        <str val="epouse"/>
+                       </vc>
+                      </filter>
+                     </docOrder>
+                     <axis name="attribute" nodeTest="NA nQ{http://www.w3.org/XML/1998/namespace}id"
+                     />
+                    </slash>
+                    <valueOf line="481" flags="l">
+                     <fn name="string-join">
+                      <convert from="AZ" to="AS">
+                       <data>
+                        <slash simple="2">
+                         <filter flags="b">
+                          <fn name="key">
+                           <str val="Q{http://saxon.sf.net/}kk103"/>
+                           <str val="biens_propres"/>
+                           <root/>
+                          </fn>
+                          <fn name="contains">
+                           <cvUntyped to="AS">
+                            <attVal name="Q{}corresp" chk="0"/>
+                           </cvUntyped>
+                           <fn name="concat">
+                            <str val="#"/>
+                            <atomSing card="?" diag="0|1||fn:concat">
+                             <varRef name="Q{}currentId" slot="0"/>
+                            </atomSing>
+                           </fn>
+                          </fn>
+                         </filter>
+                         <axis name="attribute" nodeTest="NA nQ{}quantity"/>
+                        </slash>
+                       </data>
+                      </convert>
+                      <str val=" "/>
+                     </fn>
+                    </valueOf>
+                   </let>
+                  </elem>
+                  <elem line="483" name="td" nsuri="" flags="l">
+                   <valueOf line="484" flags="l">
+                    <fn name="string-join">
+                     <convert from="A" to="AS">
+                      <data>
+                       <slash>
+                        <filter flags="b">
+                         <axis name="descendant"
+                          nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}measure"/>
+                         <vc op="eq" onEmpty="0" comp="CCC">
+                          <cast flags="ae" as="?AS">
+                           <attVal name="Q{}type" chk="0"/>
+                          </cast>
+                          <str val="douaire"/>
+                         </vc>
+                        </filter>
+                        <arrayBlock>
+                         <axis name="attribute" nodeTest="NA nQ{}quantity"/>
+                        </arrayBlock>
+                       </slash>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                  <elem line="486" name="td" nsuri="" flags="l">
+                   <valueOf line="487" flags="l">
+                    <fn name="string-join">
+                     <convert from="A" to="AS">
+                      <data>
+                       <slash>
+                        <filter flags="b">
+                         <axis name="descendant"
+                          nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}measure"/>
+                         <vc op="eq" onEmpty="0" comp="CCC">
+                          <cast flags="ae" as="?AS">
+                           <attVal name="Q{}type" chk="0"/>
+                          </cast>
+                          <str val="preciput"/>
+                         </vc>
+                        </filter>
+                        <arrayBlock>
+                         <axis name="attribute" nodeTest="NA nQ{}quantity"/>
+                        </arrayBlock>
+                       </slash>
+                      </data>
+                     </convert>
+                     <str val=" "/>
+                    </fn>
+                   </valueOf>
+                  </elem>
+                 </sequence>
+                </elem>
+               </forEach>
+              </elem>
+             </sequence>
+            </elem>
+            <elem line="495" name="br" nsuri="" flags="l">
+             <empty/>
+            </elem>
+            <valueOf flags="l">
+             <str
+              val="&#xA;                            * Les valeurs sont exprimées en livres.&#xA;                        "
+             />
+            </valueOf>
+           </sequence>
+          </elem>
+          <elem line="498" name="p" nsuri="" flags="l">
+           <sequence>
+            <copyOf flags="c">
+             <gVarRef name="Q{}return_home" bSlot="3"/>
+            </copyOf>
+            <valueOf flags="l">
+             <str val=" – "/>
+            </valueOf>
+            <elem name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1622339192" bSlot="4"/>
+              </att>
+              <valueOf flags="l">
+               <str val="Contrat 1"/>
+              </valueOf>
+             </sequence>
+            </elem>
+            <valueOf flags="l">
+             <str val=" – "/>
+            </valueOf>
+            <elem name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg2146489664" bSlot="5"/>
+              </att>
+              <valueOf flags="l">
+               <str val="Contrat 2"/>
+              </valueOf>
+             </sequence>
+            </elem>
+            <valueOf flags="l">
+             <str val=" – "/>
+            </valueOf>
+            <elem name="a" nsuri="" flags="l">
+             <sequence>
+              <att name="href" flags="l">
+               <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg323485106" bSlot="6"/>
+              </att>
+              <valueOf flags="l">
+               <str val="Contrat 3"/>
+              </valueOf>
+             </sequence>
+            </elem>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <copyOf line="500" flags="c">
+         <gVarRef name="Q{}footer" bSlot="7"/>
+        </copyOf>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </resultDoc>
+  </template>
+ </co>
+ <co id="30" binds="21">
+  <globalVariable name="Q{}return_index" as="1ND" line="228"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="228"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <elem line="229" name="i" nsuri="" flags="l">
+     <elem name="a" nsuri="" flags="l">
+      <sequence>
+       <att name="href" flags="l">
+        <fn name="concat">
+         <str val="./"/>
+         <data diag="0|1||fn:concat">
+          <gVarRef name="Q{}tableau" bSlot="0"/>
+         </data>
+        </fn>
+       </att>
+       <valueOf flags="l">
+        <str val="Tableau récapitulatif"/>
+       </valueOf>
+      </sequence>
+     </elem>
+    </elem>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="24" binds="20">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg323485106" as="1AS" line="297"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="297" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}contrat3" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="8" binds="11">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg208946055" as="1AS" line="605"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="605" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_3" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="10" binds="">
+  <globalVariable name="Q{}footer" as="1ND" line="193"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="193"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <elem line="194" name="footer" nsuri="" flags="l">
+     <elem line="195" name="p" nsuri="" flags="l">
+      <elem name="i" nsuri="" flags="l">
+       <sequence>
+        <valueOf flags="l">
+         <fn name="string-join">
+          <convert from="AZ" to="AS">
+           <data>
+            <docOrder intra="1">
+             <slash simple="2">
+              <slash simple="1">
+               <root/>
+               <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}editionStmt"/>
+              </slash>
+              <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}edition"/>
+             </slash>
+            </docOrder>
+           </data>
+          </convert>
+          <str val=" "/>
+         </fn>
+        </valueOf>
+        <valueOf flags="Sl">
+         <str val="."/>
+        </valueOf>
+       </sequence>
+      </elem>
+     </elem>
+    </elem>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="19" binds="">
+  <globalVariable name="Q{}accueil" as="1ND" line="15"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="15"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf line="16" flags="Sl">
+     <str val="accueil.html"/>
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="3" binds="">
+  <globalVariable name="Q{}body_css" as="1ND" line="200"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <doc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="200"
+    base="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" flags="t">
+    <valueOf flags="l">
+     <str
+      val="margin-right: 10%; margin-left: 10%; margin-top: 6%;background-image: url(&#39;./img/wallpaper.jpg&#39;);background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;font-family: Garamond, serif;"
+     />
+    </valueOf>
+   </doc>
+  </globalVariable>
+ </co>
+ <co id="9" binds="21">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg192848128" as="1AS" line="297"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="297" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}tableau" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="5" binds="23 27 26 25 29 22 13 1 5 5 5 16 28 30 5 5 14 24 28 30 5 5 16 28 30 5">
+  <mode onNo="TC" flags="dW" patternSlots="0">
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" matches="ND" flags="s"
+    line="264" module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.nodeTest role="match" test="ND"/>
+    <sequence role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="265">
+     <callT name="Q{}home" bSlot="0"/>
+     <callT line="266" name="Q{}contrat1" bSlot="1"/>
+     <callT line="267" name="Q{}contrat2" bSlot="2"/>
+     <callT line="268" name="Q{}contrat3" bSlot="3"/>
+     <callT line="269" name="Q{}tableau" bSlot="4"/>
+     <callT line="270" name="Q{}facs1" bSlot="5"/>
+     <callT line="271" name="Q{}facs2" bSlot="6"/>
+     <callT line="272" name="Q{}facs3" bSlot="7" flags="t"/>
+    </sequence>
+   </templateRule>
+   <templateRule prec="0" prio="0.0" seq="5" rank="1" minImp="0" slots="0"
+    matches="NE nQ{http://www.tei-c.org/ns/1.0}unclear" flags="s" line="831"
+    module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.nodeTest role="match" test="NE nQ{http://www.tei-c.org/ns/1.0}unclear"/>
+    <sequence role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="832">
+     <valueOf flags="S">
+      <str val="["/>
+     </valueOf>
+     <applyT line="833" flags="i" bSlot="8">
+      <axis role="select" name="child" nodeTest="N"/>
+     </applyT>
+     <valueOf line="834" flags="S">
+      <str val="]"/>
+     </valueOf>
+    </sequence>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="3" rank="2" minImp="0" slots="0"
+    matches="NE nQ{http://www.tei-c.org/ns/1.0}text" flags="s" line="410"
+    module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.withUpper role="match" axis="parent" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.withPredicate>
+       <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+       <vc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+        defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="410" op="eq"
+        onEmpty="0" comp="CCC">
+        <cast flags="ae" as="?AS">
+         <data diag="1|0||=">
+          <axis name="attribute" nodeTest="NA nQ{}n"/>
+         </data>
+        </cast>
+        <str val="3"/>
+       </vc>
+      </p.withPredicate>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <elem role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="411" name="div" nsuri="">
+     <sequence>
+      <att name="style" flags="l">
+       <str val="text-align: justify;"/>
+      </att>
+      <forEach line="412">
+       <docOrder intra="1">
+        <slash simple="2">
+         <slash simple="2">
+          <docOrder intra="1">
+           <slash simple="2">
+            <fn name="key">
+             <str val="Q{http://saxon.sf.net/}kk102"/>
+             <str val="3"/>
+             <root/>
+            </fn>
+            <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+           </slash>
+          </docOrder>
+          <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+         </slash>
+         <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+        </slash>
+       </docOrder>
+       <elem line="414" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="9">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <forEach line="416">
+       <docOrder intra="1">
+        <slash simple="2">
+         <docOrder intra="1">
+          <slash simple="2">
+           <fn name="key">
+            <str val="Q{http://saxon.sf.net/}kk102"/>
+            <str val="3"/>
+            <root/>
+           </fn>
+           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+          </slash>
+         </docOrder>
+         <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}signed"/>
+        </slash>
+       </docOrder>
+       <elem line="418" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="10">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <elem line="420" name="p" nsuri="" flags="l">
+       <sequence>
+        <valueOf flags="l">
+         <str val="&lt; &lt;  "/>
+        </valueOf>
+        <elem name="a" nsuri="" flags="l">
+         <sequence>
+          <att name="href" flags="l">
+           <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg2146489664" bSlot="11"/>
+          </att>
+          <valueOf flags="l">
+           <str val="Contrat précédent."/>
+          </valueOf>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <copyOf line="421" flags="c">
+       <gVarRef name="Q{}return_home" bSlot="12"/>
+      </copyOf>
+      <valueOf flags="l">
+       <str val=" – "/>
+      </valueOf>
+      <copyOf line="421" flags="c">
+       <gVarRef name="Q{}return_index" bSlot="13"/>
+      </copyOf>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="2" rank="2" minImp="0" slots="0"
+    matches="NE nQ{http://www.tei-c.org/ns/1.0}text" flags="s" line="369"
+    module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.withUpper role="match" axis="parent" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.withPredicate>
+       <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+       <vc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+        defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="369" op="eq"
+        onEmpty="0" comp="CCC">
+        <cast flags="ae" as="?AS">
+         <data diag="1|0||=">
+          <axis name="attribute" nodeTest="NA nQ{}n"/>
+         </data>
+        </cast>
+        <str val="2"/>
+       </vc>
+      </p.withPredicate>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <elem role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="370" name="div" nsuri="">
+     <sequence>
+      <att name="style" flags="l">
+       <str val="text-align: justify;"/>
+      </att>
+      <forEach line="371">
+       <docOrder intra="1">
+        <slash simple="2">
+         <slash simple="2">
+          <docOrder intra="1">
+           <slash simple="2">
+            <fn name="key">
+             <str val="Q{http://saxon.sf.net/}kk102"/>
+             <str val="2"/>
+             <root/>
+            </fn>
+            <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+           </slash>
+          </docOrder>
+          <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+         </slash>
+         <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+        </slash>
+       </docOrder>
+       <elem line="373" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="14">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <forEach line="375">
+       <docOrder intra="1">
+        <slash simple="2">
+         <docOrder intra="1">
+          <slash simple="2">
+           <fn name="key">
+            <str val="Q{http://saxon.sf.net/}kk102"/>
+            <str val="2"/>
+            <root/>
+           </fn>
+           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+          </slash>
+         </docOrder>
+         <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}signed"/>
+        </slash>
+       </docOrder>
+       <elem line="377" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="15">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <elem line="379" name="p" nsuri="" flags="l">
+       <sequence>
+        <valueOf flags="l">
+         <str val="&lt; &lt;  "/>
+        </valueOf>
+        <elem name="a" nsuri="" flags="l">
+         <sequence>
+          <att name="href" flags="l">
+           <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1622339192" bSlot="16"/>
+          </att>
+          <valueOf flags="l">
+           <str val="Contrat précédent."/>
+          </valueOf>
+         </sequence>
+        </elem>
+        <valueOf line="380" flags="l">
+         <str val=" "/>
+        </valueOf>
+        <elem line="381" name="a" nsuri="" flags="l">
+         <sequence>
+          <att name="href" flags="l">
+           <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg323485106" bSlot="17"/>
+          </att>
+          <valueOf flags="l">
+           <str val="Contrat suivant."/>
+          </valueOf>
+         </sequence>
+        </elem>
+        <valueOf flags="l">
+         <str val=" &gt;&gt; "/>
+        </valueOf>
+       </sequence>
+      </elem>
+      <copyOf line="382" flags="c">
+       <gVarRef name="Q{}return_home" bSlot="18"/>
+      </copyOf>
+      <valueOf flags="l">
+       <str val=" – "/>
+      </valueOf>
+      <copyOf line="382" flags="c">
+       <gVarRef name="Q{}return_index" bSlot="19"/>
+      </copyOf>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="1" rank="2" minImp="0" slots="0"
+    matches="NE nQ{http://www.tei-c.org/ns/1.0}text" flags="s" line="330"
+    module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.withUpper role="match" axis="parent" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.withPredicate>
+       <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+       <vc baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+        defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="330" op="eq"
+        onEmpty="0" comp="CCC">
+        <cast flags="ae" as="?AS">
+         <data diag="1|0||=">
+          <axis name="attribute" nodeTest="NA nQ{}n"/>
+         </data>
+        </cast>
+        <str val="1"/>
+       </vc>
+      </p.withPredicate>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <elem role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="331" name="div" nsuri="">
+     <sequence>
+      <att name="style" flags="l">
+       <str val="text-align: justify;"/>
+      </att>
+      <forEach line="332">
+       <docOrder intra="1">
+        <slash simple="2">
+         <slash simple="2">
+          <docOrder intra="1">
+           <slash simple="2">
+            <fn name="key">
+             <str val="Q{http://saxon.sf.net/}kk102"/>
+             <str val="1"/>
+             <root/>
+            </fn>
+            <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+           </slash>
+          </docOrder>
+          <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}div"/>
+         </slash>
+         <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}p"/>
+        </slash>
+       </docOrder>
+       <elem line="334" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="20">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <forEach line="336">
+       <docOrder intra="1">
+        <slash simple="2">
+         <docOrder intra="1">
+          <slash simple="2">
+           <fn name="key">
+            <str val="Q{http://saxon.sf.net/}kk102"/>
+            <str val="1"/>
+            <root/>
+           </fn>
+           <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}text"/>
+          </slash>
+         </docOrder>
+         <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}signed"/>
+        </slash>
+       </docOrder>
+       <elem line="338" name="p" nsuri="" flags="l">
+        <applyT flags="i" bSlot="21">
+         <axis role="select" name="child" nodeTest="N"/>
+        </applyT>
+       </elem>
+      </forEach>
+      <elem line="340" name="p" nsuri="" flags="l">
+       <sequence>
+        <elem name="a" nsuri="" flags="l">
+         <sequence>
+          <att name="href" flags="l">
+           <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg2146489664" bSlot="22"/>
+          </att>
+          <valueOf flags="l">
+           <str val="Contrat suivant."/>
+          </valueOf>
+         </sequence>
+        </elem>
+        <valueOf flags="l">
+         <str val=" &gt;&gt; "/>
+        </valueOf>
+       </sequence>
+      </elem>
+      <copyOf line="341" flags="c">
+       <gVarRef name="Q{}return_home" bSlot="23"/>
+      </copyOf>
+      <valueOf flags="l">
+       <str val=" – "/>
+      </valueOf>
+      <copyOf line="341" flags="c">
+       <gVarRef name="Q{}return_index" bSlot="24"/>
+      </copyOf>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.0" seq="4" rank="1" minImp="0" slots="0"
+    matches="NE nQ{http://www.tei-c.org/ns/1.0}del" flags="s" line="825"
+    module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl">
+    <p.nodeTest role="match" test="NE nQ{http://www.tei-c.org/ns/1.0}del"/>
+    <elem role="action" baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+     defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="826" name="del" nsuri="">
+     <applyT line="827" flags="i" bSlot="25">
+      <axis role="select" name="child" nodeTest="N"/>
+     </applyT>
+    </elem>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="7" binds="12">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg451815518" as="1AS" line="605"
+   module="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" visibility="PRIVATE">
+   <fn baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="605" name="concat">
+    <str val="./"/>
+    <convert from="AZ" to="AS">
+     <data>
+      <gVarRef name="Q{}facs_2" bSlot="0"/>
+     </data>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <overridden/>
+ <key name="Q{http://saxon.sf.net/}kk101" line="0" binds="" flags="su">
+  <p.nodeSet test="NE nQ{http://www.tei-c.org/ns/1.0}title">
+   <docOrder baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="55" intra="1">
+    <slash>
+     <slash simple="1">
+      <root/>
+      <axis name="descendant" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}titleStmt"/>
+     </slash>
+     <axis name="child" nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}title"/>
+    </slash>
+   </docOrder>
+  </p.nodeSet>
+  <cast baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+   defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="55" flags="ae" as="?AS">
+   <attVal name="Q{}level" chk="0"/>
+  </cast>
+ </key>
+ <key name="Q{http://saxon.sf.net/}kk102" line="0" binds="" flags="su">
+  <p.nodeSet test="NE nQ{http://www.tei-c.org/ns/1.0}TEI">
+   <axis baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="321" name="descendant"
+    nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}TEI"/>
+  </p.nodeSet>
+  <cast baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+   defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="321" flags="ae" as="?AS">
+   <attVal name="Q{}n" chk="0"/>
+  </cast>
+ </key>
+ <key name="Q{http://saxon.sf.net/}kk103" line="0" binds="" flags="su">
+  <p.nodeSet test="NE nQ{http://www.tei-c.org/ns/1.0}measure">
+   <axis baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+    defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="481" name="descendant"
+    nodeTest="NE nQ{http://www.tei-c.org/ns/1.0}measure"/>
+  </p.nodeSet>
+  <cast baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl"
+   defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="481" flags="ae" as="?AS">
+   <attVal name="Q{}type" chk="0"/>
+  </cast>
+ </key>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1042151625" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="2"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="678" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1508778045" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="2"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="696" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1939993223" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="1"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="536" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1983833561" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="1"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="554" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1672728801" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="3"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="746" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n538246226" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="2"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="642" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n415103324" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="3"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="800" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n555782153" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="1"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="572" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n373320487" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="1"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="590" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n805078870" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="3"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="764" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n648125063" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="3"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="782" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <accumulator name="Q{http://ns.saxonica.com/anonymous-type}n1829601509" line="0" as="1ADI"
+  streamable="0" slots="0" binds="" flags="u">
+  <int role="init" val="0"/>
+  <pre slots="0">
+   <accRule slots="1" rank="1">
+    <p.withUpper axis="ancestor" upFirst="false">
+     <p.nodeTest test="NE nQ{http://www.tei-c.org/ns/1.0}l"/>
+     <p.withUpper axis="ancestor" upFirst="false">
+      <p.simPos test="NE nQ{http://www.tei-c.org/ns/1.0}TEI" pos="2"/>
+      <p.nodeTest test="ND"/>
+     </p.withUpper>
+    </p.withUpper>
+    <arith baseUri="file:/C:/Users/bensi/OneDrive/Bureau/XSLT/xslt_Bensidhoum.xsl" defaultElementNS="http://www.tei-c.org/ns/1.0" ns="xsl=~ xml=~" line="660" op="+" calc="i+i">
+     <supplied slot="0"/>
+     <int val="1"/>
+    </arith>
+   </accRule>
+  </pre>
+  <post slots="0"/>
+ </accumulator>
+ <output>
+  <property name="indent" value="yes"/>
+  <property name="omit-xml-declaration" value="no"/>
+  <property name="Q{http://saxon.sf.net/}stylesheet-version" value="20"/>
+  <property name="method" value="html"/>
+ </output>
+ <decimalFormat/>
+</package>
+<?Σ 9d95c63a?>

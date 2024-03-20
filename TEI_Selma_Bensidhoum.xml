@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/ODD_Selma_Bensidhoum.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<teiCorpus version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edition numériques de minutes notariales : les contrats de mariages d'ouvrières
+               en linge (XVIIIème siècle)</title>
+            <respStmt>
+               <resp>Transcription et encodage</resp>
+               <persName>
+                  <forename type="first">Selma</forename>
+                  <forename type="middle">Kaïna</forename>
+                  <surname>Bensidhoum</surname></persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Transcription encodée et enrichie de contrats de mariage d'ouvrières en linge,
+               réalisée dans le cadre du master TNAH de l'Ecole nationale des chartes.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Les archives trancrites et encodées dans cette édition sont des minutes issues du
+               minutier central des notaires de Paris. Elles sont conservées aux Archives nationales
+               de France. Il s'agit plus spécifiquement de minutes de contrats de mariage du
+               XVIIIème siècle.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>L’objectif de cette édition numérique est d’identifier et extraire les informations
+               pertinente à une analyse historique des archives du Minutier central des Archives
+               nationales de France, afin de servir à des études statistiques sur la population
+               parisienne.</p>
+            <p>L’édition numérique permet également la comparaison entre le texte transcrit et
+               encodé et une version facsimile des archives, s’inscrivant dans une démarche
+               pédagogique d’accompagnement à la paléographie moderne.</p>
+         </projectDesc>
+         <editorialDecl>
+            <normalization>
+               <p>Le texte transcrit et encodé a été normalisé afin d’en faciliter la lecture et
+                  l’extraction d’informations pertinentes (résolution des abréviations, ajout
+                  d’accent, de ponctuation et de majuscules).</p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <TEI n="1">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Contrat de mariage de Jean Mathias Meiltz et Marie Geneviève Girard</title>
+               <author>Nicolas Lardin</author>
+            </titleStmt>
+            <publicationStmt>
+               <p>Transcription encodée et enrichie du contrat de mariage de mariage de Jean Mathias
+                  Meiltz et Marie Geneviève Girard, réalisée dans le cadre du master TNAH de l'Ecole
+                  nationale des chartes.</p>
+            </publicationStmt>
+            <sourceDesc>
+               <msDesc xml:id="MC-ET-XXVIII-458">
+                  <msIdentifier>
+                     <repository>
+                        <name>Archives nationales de France</name>
+                        <address>
+                           <addrLine>60, rue des Francs Bourgeois,</addrLine>
+                           <addrLine>75003</addrLine>
+                           <addrLine>Paris</addrLine>
+                        </address>
+                     </repository>
+                     <idno type="cote">MC/ET/XXVIII/458</idno>
+                     <msName>Minutes et répertoires du notaire Nicolas LARDIN, 3 février 1776 - 4
+                        novembre 1785 (étude XXVIII)</msName>
+                  </msIdentifier>
+                  <head>
+                     <title>Contrat de mariage de Jean-Mathias MEILTZ, menuisier à Paris, rue de
+                        Charonne, fils de Mathieu Meiltz, vitrier à Sievrunt en palatin, avec
+                        Marie-Geneviève GIRARD, fille d'un sieur de long.</title>
+                     <origDate when="1776-10-24">24 octobre 1776</origDate>
+                  </head>
+                  <history>
+                     <origin notBefore="1776-02-03" notAfter="1785-11-04">Minutes et répertoires du
+                        notaire Nicolas LARDIN.</origin>
+                     <provenance>
+                        <p>Étude notariale XXVIII (Paris ; 1686-....)</p>
+                        <p>Depuis son origine (1686), cette étude est demeurée rue Saint-Antoine, au
+                           voisinage de la Bastille.</p>
+                     </provenance>
+                     <acquisition when="1939-01-01">Registre entré aux Archives nationales en
+                        1939.</acquisition>
+                  </history>
+                  <additional>
+                     <adminInfo>
+                        <availability status="restricted">
+                           <p>Minutes et répertoires : la loi 2008-696 du 15 juillet 2008 relative
+                              aux archives a fixé à 75 ans à compter de la date de l'acte, ou à 25
+                              ans à compter de la date du décès de l'intéressé si ce délai est plus
+                              bref, le délai de communication des minutes et répertoires des
+                              notaires ; ce délai est porté à 100 ans à compter de la date de l'acte
+                              si le document se rapporte à un mineur (code du Patrimoine, articles
+                              L213-2, 4e d et 5e).</p>
+                           <p>Les documents peuvent être librement reproduits à usage privé du
+                              copiste, sous réserve des contraintes liées à leur état matériel et
+                              dans le respect des textes relatifs à la réutilisation des
+                              informations publiques.</p>
+                        </availability>
+                     </adminInfo>
+                  </additional>
+               </msDesc>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <settingDesc>
+               <listPlace>
+                  <place xml:id="rue_de_charonne" type="street">
+                     <placeName>rue de Charonne</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">XIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="gd_rue_fb_st_ant" type="street">
+                     <placeName>Grande rue du faubourg Saint Antoine</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">XIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="faubourg_st_ant" type="faubourg">
+                     <placeName>faubourg Saint Antoine</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">XIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="paroisse_ste_mar" type="paroisse">
+                     <placeName>paroisse Sainte Marguerite</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">XIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="Paris" type="city">
+                     <placeName>Paris</placeName>
+                     <location>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="Palatin" type="state">
+                     <placeName>Palatin</placeName>
+                     <placeName notBefore="1085-01-01" notAfter="1803-12-31" cert="high">Palatinat
+                        du Rhin</placeName>
+                     <location>
+                        <country notBefore="0962-02-02" notAfter="1806-08-06">Saint Empire romain
+                           germanique</country>
+                     </location>
+                  </place>
+               </listPlace>
+            </settingDesc>
+            <particDesc>
+               <listPerson>
+                  <person xml:id="Lardin" role="notaire">
+                     <persName>
+                        <forename type="first">Nicolas</forename>
+                        <forename type="middle">Jean</forename>
+                        <surname>Lardin</surname>
+                     </persName>
+                     <occupation notBefore="1776-02-03" notAfter="1785-11-03">notaire</occupation>
+                  </person>
+                  <person xml:id="Dumoulin" role="inconnu">
+                     <persName>
+                        <surname>Dumoulin</surname>
+                     </persName>
+                  </person>
+                  <person xml:id="JMM" role="epoux">
+                     <persName>
+                        <forename type="first">Jean</forename>
+                        <forename type="middle">Mathias</forename>
+                        <surname>Meiltz</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#rue_de_charonne">rue de Charonne</placeName>
+                        <placeName ref="#paroisse_ste_mar">paroisse sainte Marguerite</placeName>
+                        <placeName ref="#faubourg_st_ant">faubourg saint Antoine</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>menuisier</occupation>
+                  </person>
+                  <person xml:id="MGG" role="epouse">
+                     <persName>
+                        <forename type="first">Marie</forename>
+                        <forename type="middle">Geneviève</forename>
+                        <surname>Girard</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#gd_rue_fb_st_ant">rue de Charonne</placeName>
+                        <placeName ref="#paroisse_ste_mar">paroisse sainte Marguerite</placeName>
+                        <placeName ref="#faubourg_st_ant">faubourg saint Antoine</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>ouvrière en linge</occupation>
+                  </person>
+                  <person xml:id="MM" role="pere_epoux">
+                     <persName>
+                        <forename type="first">Mathias</forename>
+                        <surname>Meiltz</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#Palatin">Palatin</placeName>
+                        <country notBefore="0962-02-02" notAfter="1806-08-06">Saint Empire romain
+                           germanique</country>
+                     </residence>
+                     <occupation>vitrier</occupation>
+                  </person>
+                  <person xml:id="MH" role="mere_epoux">
+                     <persName>
+                        <forename type="first">Marie</forename>
+                        <surname>Hendress</surname>
+                     </persName>
+                     <residence>
+                        <placeName>Palatin</placeName>
+                        <country notBefore="0962-02-02" notAfter="1806-08-06">Saint Empire romain
+                           germanique</country>
+                     </residence>
+                  </person>
+                  <person xml:id="JG" role="pere_epouse">
+                     <persName>
+                        <forename type="first">Jean</forename>
+                        <surname>Girard</surname>
+                     </persName>
+                     <occupation>scieur de long</occupation>
+                  </person>
+                  <person xml:id="MGC" role="mere_epouse">
+                     <persName>
+                        <forename type="first">Marie</forename>
+                        <forename type="middle">Genevieve</forename>
+                        <surname>Coudray</surname>
+                     </persName>
+                  </person>
+                  <listRelation>
+                     <relation name="spouse" mutual="#JMM #MGG"/>
+                     <relation name="spouse" mutual="#JG #MGC"/>
+                     <relation name="spouse" mutual="#MM #MH"/>
+                     <relation name="parent" active="#MM #MH" passive="#JMM"/>
+                     <relation name="parent" active="#JG #MGC" passive="#MGG"/>
+                  </listRelation>
+               </listPerson>
+            </particDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile>
+         <surface>
+            <graphic url="img\MC-ET-XXVIII-468(1).JPG" width="3064.1px" height="4592.1px"/>
+            <zone xml:id="c1-p1-l1"
+               points=" 869,486 1902,426 2832,468 2831,594 1860,604 1175,626 836,614 "/>
+            <zone xml:id="c1-p1-l2"
+               points=" 871,632 1827,614 2383,599 2783,602 2794,662 2303,696 1664,719 1250,744 881,731 797,675 "/>
+            <zone xml:id="c1-p1-l3"
+               points=" 810,759 1509,735 2072,707 2532,687 2793,677 2821,716 2785,758 2495,782 2192,793 1861,815 1557,816 1313,835 1140,850 894,841 755,813 "/>
+            <zone xml:id="c1-p1-l4"
+               points=" 783,857 1410,844 1820,817 2255,796 2581,791 2800,769 2873,805 2821,888 2276,891 1905,910 1543,935 1245,934 962,953 755,948 "/>
+            <zone xml:id="c1-p1-l5"
+               points=" 769,967 1219,958 1675,943 2092,920 2277,913 2270,1005 1863,1037 1368,1045 1078,1055 787,1073 740,1011 "/>
+            <zone xml:id="c1-p1-l6"
+               points=" 1014,1076 1502,1062 1925,1041 2239,1035 2547,1029 2871,995 2901,1088 2662,1106 2297,1129 1884,1152 1602,1165 1410,1166 1109,1187 931,1140 "/>
+            <zone xml:id="c1-p1-l7"
+               points=" 763,1260 801,1194 1020,1192 1354,1185 1725,1178 2144,1147 2488,1127 2817,1103 2917,1088 2907,1182 2718,1183 2475,1212 2151,1241 1805,1257 1475,1270 1178,1281 1003,1293 793,1300 "/>
+            <zone xml:id="c1-p1-l8"
+               points=" 810,1310 1291,1292 1599,1278 1791,1264 2122,1261 2392,1232 2606,1205 2772,1196 2805,1241 2801,1304 2591,1321 2279,1336 1970,1349 1715,1376 1518,1381 1259,1386 1094,1393 960,1398 756,1370 "/>
+            <zone xml:id="c1-p1-l9"
+               points=" 734,1461 938,1426 1315,1415 1574,1395 1742,1385 2073,1375 2301,1358 2524,1336 2720,1350 2716,1418 2457,1490 2021,1494 1614,1514 1321,1504 1059,1528 849,1527 "/>
+            <zone xml:id="c1-p1-l10"
+               points=" 764,1605 922,1555 1234,1527 1595,1535 1771,1534 1762,1595 1484,1655 1098,1654 854,1659 "/>
+            <zone xml:id="c1-p1-l11"
+               points=" 815,1786 806,1971 1110,1961 1448,1954 1770,1953 2243,1937 2540,1913 2856,1906 2928,1891 2871,1787 2451,1797 2127,1812 1832,1805 1593,1821 1278,1835 1128,1830 "/>
+            <zone xml:id="c1-p1-l12" points=" 813,1982 831,2104 1381,2065 1383,1959 "/>
+            <zone xml:id="c1-p1-l13"
+               points=" 884,2111 893,2203 1616,2194 2086,2178 2524,2126 2871,2096 2847,1997 2419,2020 1951,2057 1614,2085 1313,2094 "/>
+            <zone xml:id="c1-p1-l14"
+               points=" 846,2218 834,2304 1099,2300 1429,2299 1708,2296 1675,2204 1228,2208 "/>
+            <zone xml:id="c1-p1-l15"
+               points=" 988,2306 974,2406 1181,2389 1453,2397 1875,2373 2264,2351 2633,2290 2921,2282 2934,2178 2599,2177 2218,2236 1961,2262 1663,2294 1340,2316 1111,2320 "/>
+            <zone xml:id="c1-p1-l16"
+               points=" 851,2416 835,2513 1018,2501 1249,2511 1509,2504 1823,2486 1854,2391 1499,2409 1179,2405 927,2410 "/>
+            <zone xml:id="c1-p1-l17"
+               points=" 806,3509 982,3499 1380,3505 1731,3503 2082,3508 2311,3498 2596,3506 2820,3483 2942,3491 2946,3580 2705,3616 2205,3595 1818,3622 1449,3617 1201,3632 989,3635 758,3646 "/>
+            <zone xml:id="c1-p1-l18"
+               points=" 854,3653 838,3744 1206,3726 1553,3714 1857,3707 2205,3681 2507,3687 2825,3673 2819,3615 2409,3611 2030,3614 1744,3629 1519,3637 1229,3631 950,3641 "/>
+            <zone xml:id="c1-p1-l19"
+               points=" 854,3745 859,3814 1211,3821 1624,3784 1957,3787 2247,3779 2541,3770 2773,3770 2954,3765 2925,3692 2594,3688 2271,3686 1966,3692 1582,3707 1320,3726 1024,3726 "/>
+            <zone xml:id="c1-p1-l20"
+               points=" 849,3830 854,3929 1264,3938 1736,3903 2166,3878 2515,3877 2972,3883 2953,3783 2472,3786 2061,3790 1625,3786 1247,3825 905,3821 "/>
+            <zone xml:id="c1-p1-l21" points=" 221,197 468,184 937,269 917,379 424,382 215,366 "/>
+            <zone xml:id="c1-p1-l22"
+               points=" 231,384 192,591 193,784 431,769 757,744 830,604 937,418 570,386 "/>
+            <zone xml:id="c1-p1-l23" points=" 263,802 256,916 735,912 730,767 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-XXVIII-468(2).JPG" width="3063.66666px" height="4591.66666px"/>
+            <zone xml:id="c1-p2-l1" points=" 697,463 1094,473 1429,491 1414,601 999,601 654,579 "/>
+            <zone xml:id="c1-p2-l2"
+               points=" 842,598 1502,595 1992,577 2519,587 2909,582 2934,703 2489,688 1897,685 1437,692 997,705 805,690 "/>
+            <zone xml:id="c1-p2-l3"
+               points=" 684,700 677,772 960,792 1392,800 1860,790 2112,780 2485,777 2774,790 2922,793 2902,712 2510,703 1909,692 1414,705 1125,715 774,690 "/>
+            <zone xml:id="c1-p2-l4"
+               points=" 602,790 592,888 877,905 1239,905 1609,902 2034,888 2369,880 2679,883 2925,873 2910,792 2424,782 2042,797 1667,808 1287,823 1020,820 789,807 "/>
+            <zone xml:id="c1-p2-l5"
+               points=" 675,897 667,1028 982,1003 1475,995 1914,1002 2452,973 2469,885 1694,900 1169,908 820,905 "/>
+            <zone xml:id="c1-p2-l6"
+               points=" 1029,1005 999,1140 1492,1148 1944,1155 2280,1172 2784,1162 2835,1050 2327,1047 1857,1047 1437,1035 1212,1012 "/>
+            <zone xml:id="c1-p2-l7"
+               points=" 639,1177 642,1302 1030,1310 1515,1305 1990,1290 2420,1287 2825,1298 2995,1298 2965,1165 2495,1198 1914,1177 1304,1193 854,1178 "/>
+            <zone xml:id="c1-p2-l8"
+               points=" 712,1327 719,1448 1087,1447 1424,1447 1862,1445 2224,1443 2670,1413 2865,1402 2839,1308 2339,1318 1889,1318 1522,1322 1185,1332 902,1323 "/>
+            <zone xml:id="c1-p2-l9"
+               points=" 717,1467 730,1595 1234,1577 1730,1582 2099,1585 2610,1582 2999,1568 2975,1435 2415,1445 1774,1455 1140,1452 "/>
+            <zone xml:id="c1-p2-l10"
+               points=" 710,1602 642,1732 887,1730 1609,1730 2187,1722 2669,1715 2990,1730 2979,1593 2185,1605 1645,1605 1212,1608 914,1603 "/>
+            <zone xml:id="c1-p2-l11"
+               points=" 669,1768 674,1863 1110,1870 1614,1860 2084,1852 2424,1867 2744,1870 2972,1870 2952,1738 2429,1752 2009,1745 1564,1752 1405,1748 1027,1755 "/>
+            <zone xml:id="c1-p2-l12"
+               points=" 660,1898 655,1998 1029,2003 1349,2007 1742,2017 2140,2015 2434,2032 2825,2042 3004,2042 2975,1917 2517,1917 2129,1897 1774,1893 1424,1892 870,1887 "/>
+            <zone xml:id="c1-p2-l13"
+               points=" 674,2030 669,2157 982,2157 1424,2158 1795,2172 2045,2185 2489,2187 2830,2185 2817,2045 2230,2065 1719,2053 1260,2047 867,2037 "/>
+            <zone xml:id="c1-p2-l14"
+               points=" 647,2198 629,2340 960,2342 1519,2347 1499,2182 1025,2177 "/>
+            <zone xml:id="c1-p2-l15"
+               points=" 529,3994 527,4119 830,4127 1325,4142 1739,4132 2160,4134 2569,4155 2942,4144 2922,4030 2352,4020 1715,4012 1250,4015 794,3984 "/>
+            <zone xml:id="c1-p2-l16"
+               points=" 535,4140 542,4240 809,4244 1342,4269 1890,4265 2292,4260 2645,4264 2979,4267 2990,4162 2700,4177 2082,4150 1482,4152 864,4139 "
+            />
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-XXVIII-468(3).JPG" width="3063.56666px" height="4591.56666px"/>
+            <zone xml:id="c1-p3-l1"
+               points=" 692,452 692,577 871,594 1217,614 1714,590 2093,581 2478,588 2742,577 2744,483 2418,495 1616,488 1018,490 "/>
+            <zone xml:id="c1-p3-l2"
+               points=" 667,585 676,705 960,718 1680,703 2376,681 2822,683 2824,583 1991,590 1374,616 "/>
+            <zone xml:id="c1-p3-l3"
+               points=" 672,718 685,814 1485,829 2321,796 2791,772 2811,683 1838,701 1275,718 "/>
+            <zone xml:id="c1-p3-l4"
+               points=" 656,823 670,938 1596,933 2243,918 2793,882 2793,792 1969,825 1330,827 887,832 "/>
+            <zone xml:id="c1-p3-l5" points=" 681,949 678,1069 1629,1060 1623,951 "/>
+            <zone xml:id="c1-p3-l6"
+               points=" 805,1069 772,1173 1519,1180 2082,1168 2631,1157 2835,1151 2815,1049 1884,1049 1115,1075 "/>
+            <zone xml:id="c1-p3-l7"
+               points=" 650,1182 647,1286 1348,1293 2175,1271 2512,1257 2842,1257 2840,1162 1935,1180 1301,1189 838,1184 "/>
+            <zone xml:id="c1-p3-l8"
+               points=" 643,1293 652,1410 1244,1401 1771,1384 2235,1384 2711,1355 2840,1359 2842,1271 1906,1295 1168,1306 "/>
+            <zone xml:id="c1-p3-l9"
+               points=" 621,1408 636,1530 1199,1510 1769,1499 2370,1481 2707,1466 2696,1357 1875,1395 1146,1406 "/>
+            <zone xml:id="c1-p3-l10"
+               points=" 800,1519 803,1627 1503,1627 1904,1619 2390,1590 2704,1572 2888,1561 2868,1468 1570,1512 "/>
+            <zone xml:id="c1-p3-l11"
+               points=" 678,1632 698,1725 1820,1721 2897,1645 2875,1561 1760,1625 "/>
+            <zone xml:id="c1-p3-l12"
+               points=" 698,1747 698,1854 1767,1814 2554,1767 2888,1752 2864,1656 1820,1725 987,1732 "/>
+            <zone xml:id="c1-p3-l13"
+               points=" 676,1882 674,1986 1279,1955 1811,1922 2410,1864 2868,1853 2871,1762 2221,1791 1428,1835 929,1855 "/>
+            <zone xml:id="c1-p3-l14"
+               points=" 627,1979 636,2075 1177,2050 1809,2030 2403,1995 2849,1977 2873,1880 2108,1906 1685,1939 1219,1968 "/>
+            <zone xml:id="c1-p3-l15"
+               points=" 721,2075 725,2172 1326,2148 1791,2130 2600,2077 2578,1997 1386,2052 "/>
+            <zone xml:id="c1-p3-l16"
+               points=" 760,2183 772,2272 1503,2234 2075,2194 2720,2154 2882,2119 2871,2033 2237,2103 1507,2143 1011,2166 "/>
+            <zone xml:id="c1-p3-l17"
+               points=" 698,2286 716,2394 1547,2341 2381,2286 2942,2235 2915,2135 2137,2202 1525,2246 953,2281 "/>
+            <zone xml:id="c1-p3-l18"
+               points=" 683,2410 694,2514 1789,2439 2764,2357 2933,2343 2931,2248 1871,2330 1148,2372 "/>
+            <zone xml:id="c1-p3-l19"
+               points=" 694,2516 696,2607 1501,2543 2268,2496 2924,2454 2902,2354 1727,2456 973,2501 "/>
+            <zone xml:id="c1-p3-l20"
+               points=" 701,2621 709,2718 1472,2680 2297,2590 2297,2501 1392,2561 "/>
+            <zone xml:id="c1-p3-l21"
+               points=" 805,2714 822,2800 1836,2756 2520,2683 2933,2638 2928,2543 2039,2638 1408,2691 "/>
+            <zone xml:id="c1-p3-l22"
+               points=" 707,2826 705,2908 1410,2872 2057,2830 2651,2759 2953,2735 2928,2646 2073,2733 1425,2788 931,2810 "/>
+            <zone xml:id="c1-p3-l23"
+               points=" 725,2924 714,3017 1479,2973 2086,2926 2525,2882 2955,2862 2939,2758 1886,2846 1040,2906 "/>
+            <zone xml:id="c1-p3-l24"
+               points=" 714,3026 685,3112 1299,3079 1864,3064 2467,2997 2875,2955 2855,2875 1960,2955 1197,2999 "/>
+            <zone xml:id="c1-p3-l25"
+               points=" 676,3130 681,3248 1233,3210 1966,3153 2567,3093 2926,3068 2915,2964 1973,3062 1386,3104 922,3124 "/>
+            <zone xml:id="c1-p3-l26"
+               points=" 667,3279 672,3387 1266,3354 1951,3268 2600,3188 2997,3179 2957,3088 1804,3175 1062,3226 "/>
+            <zone xml:id="c1-p3-l27"
+               points=" 727,3391 721,3478 1248,3460 1705,3416 2168,3351 2591,3314 2893,3292 2895,3185 2102,3256 1448,3349 998,3371 "/>
+            <zone xml:id="c1-p3-l28"
+               points=" 716,3484 721,3573 1166,3569 1550,3522 2008,3478 2436,3414 2915,3405 2915,3294 2033,3378 1425,3442 1013,3469 "/>
+            <zone xml:id="c1-p3-l29"
+               points=" 727,3578 738,3657 1315,3675 1791,3622 2359,3558 2731,3513 2911,3511 2904,3407 2257,3456 1572,3527 969,3580 "/>
+            <zone xml:id="c1-p3-l30"
+               points=" 747,3708 721,3797 1106,3779 1760,3724 2257,3680 2704,3642 2946,3611 2944,3500 2492,3535 2039,3600 1494,3657 933,3686 "/>
+            <zone xml:id="c1-p3-l31"
+               points=" 716,3811 698,3908 1257,3866 1636,3846 1969,3818 2529,3753 2950,3736 2968,3622 2197,3687 1408,3753 918,3787 "/>
+            <zone xml:id="c1-p3-l32"
+               points=" 727,3917 705,4015 1120,3975 1583,3922 2077,3877 2540,3864 2946,3826 2957,3720 1997,3824 1204,3884 "/>
+            <zone xml:id="c1-p3-l33"
+               points=" 714,4021 707,4081 1186,4047 1554,4005 1953,3983 2348,3952 2928,3941 2928,3852 2008,3897 1386,3954 "/>
+            <zone xml:id="c1-p3-l34"
+               points=" 758,4098 743,4185 1481,4100 2075,4058 2680,4032 2718,3952 2015,3976 1536,4018 1126,4061 "/>
+            <zone xml:id="c1-p3-l35"
+               points=" 1066,4158 1044,4229 1922,4189 2645,4154 2997,4160 2970,4047 2274,4069 1647,4112 "
+            />
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-XXVIII-468(4).JPG" width="3063.56666px" height="4591.56666px"/>
+            <zone xml:id="c1-p4-l1"
+               points=" 798,554 800,669 1155,674 1490,674 1829,676 2166,652 2434,656 2902,641 2908,532 2028,561 1144,550 "/>
+            <zone xml:id="c1-p4-l2"
+               points=" 814,683 803,789 1479,798 1988,776 2527,754 2911,743 2913,656 2206,665 1199,696 "/>
+            <zone xml:id="c1-p4-l3" points=" 814,814 814,896 1951,873 2906,851 2895,754 1780,802 "/>
+            <zone xml:id="c1-p4-l4" points=" 780,902 785,1013 1833,1002 2919,978 2908,867 1807,904 "/>
+            <zone xml:id="c1-p4-l5"
+               points=" 798,1024 791,1157 1634,1131 2133,1080 2119,1000 1428,1013 "/>
+            <zone xml:id="c1-p4-l6"
+               points=" 1000,1157 1006,1219 1838,1217 2822,1188 2809,1080 1796,1126 "/>
+            <zone xml:id="c1-p4-l7"
+               points=" 822,1270 842,1364 1541,1326 2201,1306 2166,1226 1297,1246 "/>
+            <zone xml:id="c1-p4-l8"
+               points=" 1077,1355 1088,1428 2037,1426 2767,1383 2957,1372 2939,1288 1982,1337 "/>
+            <zone xml:id="c1-p4-l9"
+               points=" 809,1443 803,1550 1689,1528 2184,1503 2662,1477 2970,1474 2950,1395 1793,1439 "/>
+            <zone xml:id="c1-p4-l10"
+               points=" 794,1568 800,1661 1583,1652 2421,1605 2946,1585 2946,1494 1804,1541 "/>
+            <zone xml:id="c1-p4-l11"
+               points=" 783,1701 822,1807 1891,1729 2984,1687 2970,1608 1824,1656 "/>
+            <zone xml:id="c1-p4-l12"
+               points=" 825,1820 822,1906 1924,1857 2973,1795 2966,1698 1705,1769 "/>
+            <zone xml:id="c1-p4-l13"
+               points=" 814,1935 822,2021 1960,1948 2966,1908 2946,1815 1829,1864 "/>
+            <zone xml:id="c1-p4-l14"
+               points=" 889,2029 887,2109 1911,2066 2977,2004 2962,1936 1824,1971 "/>
+            <zone xml:id="c1-p4-l15"
+               points=" 800,2128 814,2206 1951,2177 2995,2133 2968,2031 1813,2075 "/>
+            <zone xml:id="c1-p4-l16" points=" 798,2228 809,2321 1190,2285 1179,2219 "/>
+            <zone xml:id="c1-p4-l17" points=" 1082,2283 1080,2348 1922,2310 2986,2263 2964,2168 "/>
+            <zone xml:id="c1-p4-l18"
+               points=" 811,2385 800,2481 1957,2425 2966,2363 2953,2283 1862,2321 "/>
+            <zone xml:id="c1-p4-l19"
+               points=" 827,2503 814,2629 1973,2541 3013,2485 3006,2383 1813,2445 "/>
+            <zone xml:id="c1-p4-l20" points=" 851,2636 842,2718 1538,2660 1527,2587 "/>
+            <zone xml:id="c1-p4-l21" points=" 1233,2694 1210,2776 2164,2773 2157,2660 "/>
+            <zone xml:id="c1-p4-l22" points=" 2301,2649 2283,2756 2671,2802 2687,2667 "/>
+            <zone xml:id="c1-p4-l23" points=" 1040,2866 1060,3026 1705,3048 1731,2848 "/>
+            <zone xml:id="c1-p4-l24" points=" 2235,2862 2226,3010 2718,3035 2722,2871 "/>
+         </surface>
+      </facsimile>
+      <text>
+         <body>
+            <div type="titre">
+               <head facs="#c1-p1-l21">Mariage</head>
+               <lb/>
+               <p facs="#c1-p1-l22">
+                  <persName ref="#JMM">Jean Mathias Meiltz</persName> et <persName ref="#MGG">Marie
+                     Geneviève Girard</persName>, </p>
+               <lb/>
+               <p facs="#c1-p1-l23">
+                  <date when="1776-10-24">24 octobre 1776</date>
+               </p>
+            </div>
+            <div type="clauses">
+               <p>
+                  <l facs="#c1-p1-l1">Furent presents <persName ref="#JMM">Jean Mathias
+                        Meiltz</persName></l>
+                  <l facs="#c1-p1-l2"><roleName corresp="#JMM">menuisier</roleName> à <placeName
+                        corresp="#JMM" ref="#Paris">Paris</placeName> et demeurant <placeName
+                        ref="#rue_de_charonne" corresp="#JMM">rue de Charonne</placeName>
+                     <placeName ref="#faubourg_st_ant" corresp="#JMM">faubourg Saint
+                        Antoine</placeName></l>
+                  <l facs="#c1-p1-l3"><placeName ref="#paroisse_ste_mar" corresp="#JMM">paroisse
+                        Sainte Marguerite</placeName>, majeur fils de <persName ref="#MM">Mathias
+                        Meiltz</persName>, <roleName corresp="#MM">vitrier</roleName> à</l>
+                  <l facs="#c1-p1-l4"><unclear cert="low">Sievrunt</unclear> en <placeName
+                        ref="#Palatin" corresp="#MM #MH">Palatin</placeName> et de <persName
+                        ref="#MH">Marie Hendress</persName> sa femme, tous deux décédés,</l>
+                  <l facs="#c1-p1-l5">stipulant pour luy et en son nom d’une part</l>
+               </p>
+               <p><l facs="#c1-p1-l6">Et demoiselle <persName ref="#MGG">Marie Geneviève
+                        Girard</persName>
+                     <roleName corresp="#MGG">ouvrière en linge</roleName> demeurant</l>
+                  <l facs="#c1-p1-l7">à <placeName ref="#Paris">Paris</placeName>
+                     <placeName ref="#gde_rue_fb_st_ant" corresp="#MGG">Grande rue</placeName>
+                     <placeName ref="#faubourg_st_ant" corresp="#MGG">dudit faubourg</placeName>
+                     <placeName ref="#paroisse_ste_mar" corresp="#MGG">même paroisse</placeName>,
+                     majeure fille de deffunt</l>
+                  <l facs="#c1-p1-l8"><persName ref="#JG">Jean Girard</persName>
+                     <roleName corresp="#JG">scieur de long</roleName> et <persName ref="#MGC">Marie
+                        Geneviève Coudray</persName></l>
+                  <l facs="#c1-p1-l9">sa femme stupilante et contractante pour elle et en son</l>
+                  <l facs="#c1-p1-l10">nom d’autre part.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p1-l11"><rs type="person" ref="#JMM #MGG">Lesquelles partis</rs> pour
+                     raison du mariage espéré</l>
+                  <l facs="#c1-p1-l12">entre elles</l>
+                  <l facs="#c1-p1-l13">dont la celebration sera incessament fait en face de</l>
+                  <l facs="#c1-p1-l14">notre mère sainte église</l>
+                  <l facs="#c1-p1-l15">ont reconnu avoir fait et arrêté les traites, clauses</l>
+                  <l facs="#c1-p1-l16">et conditions qui suivent.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p1-l17">Seront <rs type="person" ref="#JMM #MGG">les futurs
+                        époux</rs> communs en tous biens meubles</l>
+                  <l facs="#c1-p1-l18">et conquets immeubles suivant la coutume de</l>
+                  <l facs="#c1-p1-l19">Paris au désir de laquelle leur future communauté sera</l>
+                  <l facs="#c1-p1-l20">régie et gouvernée, déogeant pour ce à toute</l>
+                  <l facs="#c1-p2-l1">autre contraire.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p2-l2">Ne seront neanmoins tenus des dettes l’un de l’autre</l>
+                  <l facs="#c1-p2-l3">anterieures audit mariage et s’il y en a elles seront</l>
+                  <l facs="#c1-p2-l4">payé par l’auteur d’ycelles sans que l’autre, ses biens</l>
+                  <l facs="#c1-p2-l5">ny ceux de la communauté en soient tenus.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p2-l6">Déclare <rs type="person" ref="#JMM">ledit futur époux</rs>
+                     que ses biens</l>
+                  <l facs="#c1-p2-l7">consistent en la somme de <measure quantity="50" unit="livres"
+                        type="biens_propres" corresp="#JMM">cinquante livres</measure> composée</l>
+                  <l facs="#c1-p2-l8">d’habits, linge et hardes à son usage dont il a</l>
+                  <l facs="#c1-p2-l9">justifié à <rs type="person" ref="#MGG">laditte demoiselle
+                        future épouse</rs> qui le reconnait</l>
+                  <l facs="#c1-p2-l10">et déclare que ses biens consistent en une pareille</l>
+                  <l facs="#c1-p2-l11">somme de <measure quantity="50" unit="livres" corresp="#MGG"
+                        type="biens_propres">cinquante livres</measure> en habits, linge et
+                     hardes</l>
+                  <l facs="#c1-p2-l12">à son usage que <rs type="person" ref="#JMM">ledit futur
+                        époux</rs> reconnait avoir</l>
+                  <l facs="#c1-p2-l13">en sa possession. Le tout provenant de leurs</l>
+                  <l facs="#c1-p2-l14">gains et épargnes.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p2-l15">De chacune desdittes dots il en entrera de part et
+                     d’autre</l>
+                  <l facs="#c1-p2-l16">en laditte communauté <measure type="biens_communauté"
+                        quantity="50" unit="livres" corresp="#JMM #MGG">la somme de vingt cinq
+                        livres</measure>,</l>
+                  <l facs="#c1-p3-l1">et le surplus avec ce qui aviendra et échoura aux</l>
+                  <l facs="#c1-p3-l2"><rs type="person" ref="#JMM #MGG">dits futurs époux</rs>
+                     pendant ledit mariage tant en</l>
+                  <l facs="#c1-p3-l3">meubles qu’immeubles à quelque titre que ce soit</l>
+                  <l facs="#c1-p3-l4">leur sera et demeura propres aux leur de côté</l>
+                  <l facs="#c1-p3-l5">et ligne.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p3-l6"><rs type="person" ref="#JMM">Ledit futur époux</rs> a doué et
+                     doue <rs type="person" ref="#MGG">laditte future épouse</rs></l>
+                  <l facs="#c1-p3-l7">de la somme de <measure type="douaire" quantity="100"
+                        unit="livres" corresp="#MGG">cent livres</measure> de douaire préfix</l>
+                  <l facs="#c1-p3-l8">une fois payé dont elle jouira si tot qu’il aura lieu</l>
+                  <l facs="#c1-p3-l9">sans être tenue d’en faire demande en justice.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p3-l10">Le survivant <rs type="person" ref="#MGG #JMM">desdits futurs
+                        époux</rs> prendra par preciput</l>
+                  <l facs="#c1-p3-l11">et avant partage faire des biens meubles de laditte</l>
+                  <l facs="#c1-p3-l12">communauté tels iceux qu’il voudra choisir suivant la</l>
+                  <l facs="#c1-p3-l3">prisé de l’inventaire qui en sera lors faite et sans crue</l>
+                  <l facs="#c1-p3-l4">jusqu’à concurrence de la somme de <measure type="preciput"
+                        quantity="50" unit="livres" corresp="#MGG #JMM">cinquante
+                     livres</measure></l>
+                  <l facs="#c1-p3-l5">ou cette somme en deniers comptant à son choix.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p3-l6">Le remploy des propres aliénés de part et d’autre</l>
+                  <l facs="#c1-p3-l7">pendant laditte communauté se fera suivant la coutume</l>
+                  <l facs="#c1-p3-l8">et sera soit action de nature propre et immobiliaire</l>
+                  <l facs="#c1-p3-l9">à celuy <rs type="person" ref="#JMM #MGG">desdits futurs
+                        époux</rs> qui aura droit de l’exercer</l>
+                  <l facs="#c1-p3-l20">et aux siens de côté et ligne.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p3-l21">Sera permis a <rs type="person" ref="#MGG">ladite future
+                        épouse</rs> et aux enfants</l>
+                  <l facs="#c1-p3-l22">qui naitront dudit mariage en renonceant a laditte</l>
+                  <l facs="#c1-p3-l23">communauté de reprendre tout ce que <rs type="person"
+                        ref="#MGG">ladite future épouse</rs></l>
+                  <l facs="#c1-p3-l24">aura apporté audit mariage ensemble ce qui</l>
+                  <l facs="#c1-p3-l25">luy sera avenu et échu pendant iceluy à quel</l>
+                  <l facs="#c1-p3-l26">que titre que ce soit tant en meuble qu’immeubles,</l>
+                  <l facs="#c1-p3-l27">et sy c’est elle qui exerce cette faculté elle</l>
+                  <l facs="#c1-p3-l28">reprendra en outre ses douaire et preciput cy</l>
+                  <l facs="#c1-p3-l29">dessus stipulés sans être par elle ny sesdits</l>
+                  <l facs="#c1-p3-l30">enfants aucunement tenus des dettes de laditte</l>
+                  <l facs="#c1-p3-l31">communauté encore qu’elle y eut parlée, s’y fut obligé</l>
+                  <l facs="#c1-p3-l32">ou y eu été condamnée, dont audit cas elle et sesdits</l>
+                  <l facs="#c1-p3-l33">enfants seront acquités, garantis et indemnisés par les</l>
+                  <l facs="#c1-p3-l34">héritiers et sur les biens dud futur époux.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p3-l5"><rs type="person" ref="#MGG #JMM">Les futurs époux</rs> se
+                     font donation mutuelle pure,</l>
+                  <l facs="#c1-p4-l1">simple et irrevocable par le prémourant d’eux au survivant,
+                     ce</l>
+                  <l facs="#c1-p4-l2">accepté respectivement par ledit survivant de tous les
+                     biens</l>
+                  <l facs="#c1-p4-l3">meubles, immeubles, aquets, conquetes et propres qui se</l>
+                  <l facs="#c1-p4-l4">trouveront appartenir audit survivant au jour de son décès</l>
+                  <l facs="#c1-p4-l5">en quoi que le tout puisse consister,</l>
+                  <l facs="#c1-p4-l6">pour par ledit survivant en jouir en usufruit</l>
+                  <l facs="#c1-p4-l7">seulement en sa caution juratoire.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p4-l8">Laditte donation n’aura pas lieu si au jour du décès</l>
+                  <l facs="#c1-p4-l9">dudit prémourant il y a des enfants vivants ou a naitre
+                     dudit</l>
+                  <l facs="#c1-p4-l10">mariage, mais s’ils viennent à décéder par la suite sans</l>
+                  <l facs="#c1-p4-l11">posterité légitime ou à faire profession en religion sans
+                     avoir</l>
+                  <l facs="#c1-p4-l12">valablement disposé, alors laditte donation reprendra sa</l>
+                  <l facs="#c1-p4-l13">force et vertu comme s’il ne fut pas issu d’enfants dudit
+                     mariage.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p4-l14">Et pour faire insinuer ces présentes où il appartiendra,</l>
+                  <l facs="#c1-p4-l15">il a été donné tout pouvoir au porteur d’une expedition</l>
+                  <l facs="#c1-p4-l16">d’icelles.</l>
+               </p>
+               <p>
+                  <l facs="#c1-p4-l17">Car ainsy promettant, obligeant, renonceant, fait et
+                     passé</l>
+                  <l facs="#c1-p4-l18">à <placeName ref="#Paris">Paris</placeName> en l’étude le
+                        <date when="1776-10-24">vingt quatre octobre mil sept</date></l>
+                  <l facs="#c1-p4-l19"><date when="1776-10-24">cent soixante seize</date> et ont
+                     signé ces présentes,</l>
+                  <l facs="#c1-p4-l20">vu deux mots sont rayés comme nuls.</l>
+               </p>
+            </div>
+            <div type="signatures">
+               <signed facs="#c1-p4-21" corresp="#MGG">Marie Genevieve Girard</signed>
+               <signed facs="#c1-p4-l23" corresp="#Dumoulin">Dumoulin</signed>
+               <signed facs="#c1-p4-l22" corresp="#JMM">Meiltz</signed>
+               <signed facs="#c1-p4-l24" corresp="#Lardin">Lardin</signed>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI n="2">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Contrat de mariage de Michel Datte et Marie Catherine Coppé</title>
+               <author ref="#Sibire">Augustin Amable Sibire</author>
+            </titleStmt>
+            <publicationStmt>
+               <p>Transcription encodée et enrichie du contrat de mariage de Michel Datte et Marie
+                  Catherine Coppé, réalisée dans le cadre du master TNAH de l'Ecole nationale des
+                  chartes.</p>
+            </publicationStmt>
+            <sourceDesc>
+               <msDesc xml:id="MC-ET-LXIX-691">
+                  <msIdentifier>
+                     <repository>
+                        <name>Archives nationales de France</name>
+                        <address>
+                           <addrLine>60, rue des Francs Bourgeois,</addrLine>
+                           <addrLine>75003</addrLine>
+                           <addrLine>Paris</addrLine>
+                        </address>
+                     </repository>
+                     <idno type="cote">MC/ET/LXIX/691</idno>
+                     <msName>Minutes et répertoires du notaire Augustin Amable SIBIRE, 13 juin 1759
+                        - 13 février 1772 (étude LXIX)</msName>
+                  </msIdentifier>
+                  <head>
+                     <title>Mariage.</title>
+                     <origDate when="1761-10-11">11 octobre 1761</origDate>
+                  </head>
+                  <history>
+                     <origin notBefore="1759-06-13" notAfter="1772-02-13">Minutes et répertoires du
+                        notaire Augustin Amable SIBIRE.</origin>
+                     <provenance>
+                        <p>Étude notariale LXIX (Paris ; 1518-….)</p>
+                        <p>Cette étude est installée rue Saint-Denis du XVIème siècle jusqu'au
+                           XIXème siècle, dans le voisinage de l'hôpital de la Trinité. Elle
+                           déménage ensuite rue de la Trinité, puis rue Neuve-Saint-Merri, enfin rue
+                           Aubry-le-Boucher. Transférée rue de Richelieu en 1814, puis rue Menars en
+                           1833, elle se retrouve avenue de l'Opéra en 1878 et se fixe rue
+                           Saint-Florentin (1896).</p>
+                     </provenance>
+                     <acquisition notBefore="1938-12-31" notAfter="1939-12-31">Registre entré aux
+                        Archives nationales en 1939.</acquisition>
+                  </history>
+                  <additional>
+                     <adminInfo>
+                        <availability status="restricted">
+                           <p>Minutes et répertoires : la loi 2008-696 du 15 juillet 2008 relative
+                              aux archives a fixé à 75 ans à compter de la date de l'acte, ou à 25
+                              ans à compter de la date du décès de l'intéressé si ce délai est plus
+                              bref, le délai de communication des minutes et répertoires des
+                              notaires ; ce délai est porté à 100 ans à compter de la date de l'acte
+                              si le document se rapporte à un mineur (code du Patrimoine, articles
+                              L213-2, 4e d et 5e).</p>
+                           <p>Les documents peuvent être librement reproduits à usage privé du
+                              copiste, sous réserve des contraintes liées à leur état matériel et
+                              dans le respect des textes relatifs à la réutilisation des
+                              informations publiques.</p>
+                        </availability>
+                     </adminInfo>
+                  </additional>
+               </msDesc>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <settingDesc>
+               <listPlace>
+                  <place xml:id="rue_st_germ_aux" type="street">
+                     <placeName>rue saint Germain l'Auxerrois</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">Ier</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="paroisse_st_germ_aux" type="paroisse">
+                     <placeName>Paroisse saint Germain l'Auxerrois</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">Ier</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+               </listPlace>
+            </settingDesc>
+            <particDesc>
+               <listPerson>
+                  <person xml:id="Sibire" role="notaire">
+                     <persName>
+                        <forename type="first">Augustin</forename>
+                        <forename type="middle">Amable</forename>
+                        <surname>Sibire</surname>
+                     </persName>
+                     <occupation>notaire</occupation>
+                  </person>
+                  <person xml:id="Chime" role="inconnu">
+                     <persName>
+                        <surname>Chime</surname>
+                     </persName>
+                  </person>
+                  <person xml:id="MD" role="epoux">
+                     <persName>
+                        <forename type="first">Michel</forename>
+                        <surname>Datte</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#rue_st_germ_aux">rue saint Germain l'Auxerrois</placeName>
+                        <placeName ref="#paroisse_st_germ_aux">paroisse saint Germain
+                           l'Auxerrois</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>imprimeur</occupation>
+                  </person>
+                  <person xml:id="MCC" role="epouse">
+                     <persName>
+                        <forename type="first">Marie</forename>
+                        <forename type="middle">Catherine</forename>
+                        <surname>Coppé</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#rue_st_germ_aux">rue saint Germain l'Auxerrois</placeName>
+                        <placeName ref="#paroisse_st_germ_aux">paroisse saint Germain
+                           l'Auxerrois</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>ouvrière en linge</occupation>
+                  </person>
+                  <person xml:id="GD" role="pere_epoux">
+                     <persName>
+                        <forename type="first">Gabriel</forename>
+                        <surname>Datte</surname>
+                     </persName>
+                     <occupation>cocher</occupation>
+                  </person>
+                  <person xml:id="CG" role="mere_epoux">
+                     <persName>
+                        <forename type="first">Claudine</forename>
+                        <surname>Gaudrou</surname>
+                     </persName>
+                  </person>
+                  <person xml:id="NC" role="pere_epouse">
+                     <persName>
+                        <forename type="first">Nicolas</forename>
+                        <surname>Coppé</surname>
+                     </persName>
+                     <occupation>commis à l’imprimerie royale</occupation>
+                  </person>
+                  <person xml:id="MHa" role="mere_epouse">
+                     <persName>
+                        <forename type="first">Margueritte</forename>
+                        <surname>Hazling</surname>
+                     </persName>
+                  </person>
+                  <listRelation>
+                     <relation name="spouse" mutual="#MCC #MD"/>
+                     <relation name="spouse" mutual="#GD #CG"/>
+                     <relation name="spouse" mutual="#NC #MHa"/>
+                     <relation name="parent" active="#NC #MHa" passive="#MCC"/>
+                     <relation name="parent" active="#GD #CG" passive="#MD"/>
+                  </listRelation>
+               </listPerson>
+            </particDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile>
+         <surface>
+            <graphic url="img\MC-ET-LXIX-691(1).JPG" width="3063.56666px" height="4591.56666px"/>
+            <zone xml:id="c2-p1-l1" points=" 159,121 149,270 788,255 776,107 "/>
+            <zone xml:id="c2-p1-l2" points=" 129,296 130,420 739,443 727,273 "/>
+            <zone xml:id="c2-p1-l3" points=" 835,420 835,573 2761,595 2753,480 "/>
+            <zone xml:id="c2-p1-l4" points=" 791,595 791,685 1826,717 2942,693 2931,580 1834,591 "/>
+            <zone xml:id="c2-p1-l5" points=" 795,693 795,782 2673,802 2648,713 "/>
+            <zone xml:id="c2-p1-l6" points=" 805,793 800,864 2837,893 2846,809 "/>
+            <zone xml:id="c2-p1-l7" points=" 787,882 783,977 1572,990 2724,993 2707,895 1749,893 "/>
+            <zone xml:id="c2-p1-l8" points=" 763,1008 778,1123 1940,1121 1940,1010 "/>
+            <zone xml:id="c2-p1-l9" points=" 783,1141 787,1252 1312,1259 1317,1163 "/>
+            <zone xml:id="c2-p1-l10"
+               points=" 856,1276 836,1400 1767,1403 2824,1418 2822,1332 1811,1310 "/>
+            <zone xml:id="c2-p1-l11"
+               points=" 783,1407 774,1498 1758,1511 2815,1520 2813,1427 1738,1423 "/>
+            <zone xml:id="c2-p1-l12"
+               points=" 780,1514 796,1622 1718,1622 2900,1627 2915,1527 1760,1522 "/>
+            <zone xml:id="c2-p1-l13"
+               points=" 776,1633 767,1721 1736,1741 2880,1757 2857,1659 1751,1633 "/>
+            <zone xml:id="c2-p1-l14"
+               points=" 718,1721 714,1852 1425,1848 2221,1863 2228,1764 1421,1753 "/>
+            <zone xml:id="c2-p1-l15"
+               points=" 816,1877 831,1981 1869,1985 2778,1994 2875,1888 1747,1879 "/>
+            <zone xml:id="c2-p1-l16"
+               points=" 772,1999 774,2098 1840,2107 2817,2087 2804,2025 1771,1999 "/>
+            <zone xml:id="c2-p1-l17"
+               points=" 756,2126 767,2210 1720,2216 2454,2223 2840,2216 2811,2117 2206,2110 1199,2112 "/>
+            <zone xml:id="c2-p1-l18"
+               points=" 765,2230 780,2325 1800,2329 2911,2318 2904,2219 1780,2225 "/>
+            <zone xml:id="c2-p1-l19" points=" 785,2345 787,2458 1044,2458 1031,2341 "/>
+            <zone xml:id="c2-p1-l20" points=" 933,3599 942,3801 3001,3816 2964,3654 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-LXIX-691(2).JPG" width="3063.56666px" height="4591.56666px"/>
+            <zone xml:id="c2-p2-l1" points=" 541,384 543,486 1567,477 2771,543 2780,437 1616,364 "/>
+            <zone xml:id="c2-p2-l2" points=" 554,508 554,601 1592,579 2733,654 2738,552 1530,490 "/>
+            <zone xml:id="c2-p2-l3" points=" 543,628 537,721 1536,701 2724,772 2744,667 1738,599 "/>
+            <zone xml:id="c2-p2-l4" points=" 565,741 561,829 1643,814 2800,887 2809,798 1565,716 "/>
+            <zone xml:id="c2-p2-l5"
+               points=" 532,849 545,989 1494,958 2443,956 2758,980 2747,891 1576,836 "/>
+            <zone xml:id="c2-p2-l6"
+               points=" 523,993 523,1066 1454,1062 2283,1044 2713,1066 2709,977 1521,964 "/>
+            <zone xml:id="c2-p2-l7"
+               points=" 532,1095 554,1190 1572,1175 2370,1172 2747,1181 2747,1095 1880,1066 1091,1079 "/>
+            <zone xml:id="c2-p2-l8"
+               points=" 530,1217 543,1308 1326,1299 2170,1277 2764,1308 2764,1212 1796,1195 849,1208 "/>
+            <zone xml:id="c2-p2-l9"
+               points=" 532,1341 552,1447 1403,1421 2141,1423 2137,1290 1086,1323 "/>
+            <zone xml:id="c2-p2-l10"
+               points=" 599,1478 603,1587 1667,1578 2793,1576 2789,1463 1463,1465 "/>
+            <zone xml:id="c2-p2-l11"
+               points=" 523,1624 534,1726 1649,1718 2789,1718 2773,1587 1519,1600 "/>
+            <zone xml:id="c2-p2-l12"
+               points=" 514,1751 514,1851 1594,1824 2716,1811 2707,1724 1337,1729 "/>
+            <zone xml:id="c2-p2-l13"
+               points=" 532,1862 543,1961 1106,1959 1745,1941 2771,1935 2753,1833 1403,1848 "/>
+            <zone xml:id="c2-p2-l14" points=" 543,1986 543,2092 1421,2043 1397,1957 "/>
+            <zone xml:id="c2-p2-l15"
+               points=" 665,2099 672,2201 1669,2192 2824,2190 2804,2063 1536,2061 "/>
+            <zone xml:id="c2-p2-l16"
+               points=" 517,2232 512,2321 1572,2323 2833,2307 2811,2190 1496,2203 "/>
+            <zone xml:id="c2-p2-l17"
+               points=" 550,2339 550,2448 1647,2423 2826,2390 2804,2304 1323,2321 "/>
+            <zone xml:id="c2-p2-l18"
+               points=" 552,2454 568,2561 1796,2545 2822,2521 2811,2403 1463,2434 "/>
+            <zone xml:id="c2-p2-l19" points=" 519,2574 519,2684 1716,2671 1703,2545 "/>
+            <zone xml:id="c2-p2-l20"
+               points=" 641,2720 643,2824 1665,2787 2886,2778 2882,2658 1483,2682 "/>
+            <zone xml:id="c2-p2-l21"
+               points=" 525,2855 525,2948 1747,2935 2897,2913 2886,2791 1589,2804 "/>
+            <zone xml:id="c2-p2-l22"
+               points=" 428,2964 452,3097 1749,3048 2902,3035 2891,2926 1339,2944 "/>
+            <zone xml:id="c2-p2-l23"
+               points=" 499,3110 510,3223 1678,3199 2804,3186 2802,3055 1490,3073 "/>
+            <zone xml:id="c2-p2-l24"
+               points=" 523,3239 532,3359 1800,3334 2913,3345 2908,3217 1550,3223 "/>
+            <zone xml:id="c2-p2-l25"
+               points=" 472,3387 470,3505 1408,3494 2567,3487 2578,3359 1350,3356 "/>
+            <zone xml:id="c2-p2-l26"
+               points=" 579,3531 594,3653 1734,3651 2931,3647 2906,3509 1414,3518 "/>
+            <zone xml:id="c2-p2-l27"
+               points=" 483,3669 474,3802 1780,3787 2937,3769 2935,3654 1448,3676 "/>
+            <zone xml:id="c2-p2-l28"
+               points=" 459,3818 463,3951 1745,3937 2950,3922 2968,3784 1574,3802 "/>
+            <zone xml:id="c2-p2-l29" points=" 483,3957 481,4064 913,4035 902,3942 "/>
+            <zone xml:id="c2-p2-l30" points=" 612,4068 607,4194 2999,4217 2977,4072 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-LXIX-691(3).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c2-p3-l1" points=" 755,419 754,506 1814,542 2854,546 2834,431 1624,427 "/>
+            <zone xml:id="c2-p3-l2"
+               points=" 800,527 791,624 1614,643 2382,628 2794,627 2778,558 1608,560 "/>
+            <zone xml:id="c2-p3-l3" points=" 782,644 774,747 1734,742 2799,732 2795,651 1524,656 "/>
+            <zone xml:id="c2-p3-l4" points=" 792,772 795,852 1740,851 2823,851 2808,747 1582,772 "/>
+            <zone xml:id="c2-p3-l5" points=" 794,884 807,990 1728,970 2446,966 2444,880 1480,864 "/>
+            <zone xml:id="c2-p3-l6"
+               points=" 896,1012 898,1098 1808,1092 2835,1076 2843,963 1599,995 "/>
+            <zone xml:id="c2-p3-l7"
+               points=" 855,1130 832,1246 1875,1214 2683,1194 2676,1100 1639,1111 "/>
+            <zone xml:id="c2-p3-l8"
+               points=" 811,1259 822,1339 1856,1315 2802,1303 2795,1218 1636,1227 "/>
+            <zone xml:id="c2-p3-l9"
+               points=" 787,1374 782,1454 1676,1443 2751,1400 2744,1316 1540,1347 "/>
+            <zone xml:id="c2-p3-l10"
+               points=" 1002,1504 992,1600 1827,1591 2882,1535 2859,1427 1668,1491 "/>
+            <zone xml:id="c2-p3-l11" points=" 842,1633 835,1729 1886,1697 2906,1647 2886,1554 "/>
+            <zone xml:id="c2-p3-l11b" points=" 114,1739 87,1927 710,1890 792,1707 "/>
+            <zone xml:id="c2-p3-l12"
+               points=" 878,1753 854,1843 1914,1810 2862,1770 2851,1667 1660,1722 "/>
+            <zone xml:id="c2-p3-l13" points=" 820,1867 812,1962 1799,1923 2898,1895 2887,1793 "/>
+            <zone xml:id="c2-p3-l14"
+               points=" 787,2019 775,2131 1868,2039 2854,2006 2842,1919 1687,1953 "/>
+            <zone xml:id="c2-p3-l15"
+               points=" 802,2150 794,2241 1762,2182 2732,2113 2707,2025 1624,2073 "/>
+            <zone xml:id="c2-p3-l16"
+               points=" 815,2293 816,2361 1879,2297 2831,2243 2808,2147 1515,2222 "/>
+            <zone xml:id="c2-p3-l17"
+               points=" 814,2387 815,2463 1638,2438 2807,2370 2776,2277 1650,2345 "/>
+            <zone xml:id="c2-p3-l18"
+               points=" 824,2517 822,2627 1814,2551 2859,2505 2832,2398 1698,2478 "/>
+            <zone xml:id="c2-p3-l19"
+               points=" 816,2678 791,2754 1855,2698 2880,2626 2852,2545 1711,2601 "/>
+            <zone xml:id="c2-p3-l20"
+               points=" 832,2819 812,2915 1886,2818 2822,2751 2803,2667 1574,2747 "/>
+            <zone xml:id="c2-p3-l21"
+               points=" 824,2941 838,3047 1915,2938 2992,2899 2988,2767 1686,2847 "/>
+            <zone xml:id="c2-p3-l22"
+               points=" 815,3069 812,3174 1870,3101 2982,3046 2955,2938 1647,2995 "/>
+            <zone xml:id="c2-p3-l23"
+               points=" 811,3215 806,3215 807,3306 2956,3181 2959,3082 1799,3126 "/>
+            <zone xml:id="c2-p3-l24" points=" 808,3329 814,3438 1236,3411 1227,3315 "/>
+            <zone xml:id="c2-p3-l25"
+               points=" 935,3453 918,3558 1883,3491 2948,3425 2948,3321 1708,3395 "/>
+            <zone xml:id="c2-p3-l26"
+               points=" 815,3589 823,3699 1795,3630 2924,3546 2914,3449 1651,3527 "/>
+            <zone xml:id="c2-p3-l27"
+               points=" 811,3727 839,3810 1968,3753 2931,3699 2943,3590 1736,3661 "/>
+            <zone xml:id="c2-p3-l28"
+               points=" 804,3819 798,3918 1820,3847 2948,3801 2932,3723 1719,3766 "/>
+            <zone xml:id="c2-p3-l29"
+               points=" 778,3941 790,4055 1834,3970 2895,3945 2887,3817 1703,3869 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-LXIX-691(4).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c2-p4-l1" points=" 799,427 808,531 1892,471 2815,355 2794,255 "/>
+            <zone xml:id="c2-p4-l2" points=" 818,554 827,645 1802,593 2872,478 2866,378 1572,501 "/>
+            <zone xml:id="c2-p4-l2b" points=" 106,570 106,710 630,655 624,534 "/>
+            <zone xml:id="c2-p4-l3" points=" 812,685 831,799 1940,698 2766,610 2746,505 1482,631 "/>
+            <zone xml:id="c2-p4-l4" points=" 840,809 854,906 1804,830 2786,731 2767,627 1578,745 "/>
+            <zone xml:id="c2-p4-l4b" points=" 116,1235 139,1759 868,1621 811,1187 "/>
+            <zone xml:id="c2-p4-l5" points=" 836,935 834,1021 1754,970 2739,850 2720,757 1531,871 "/>
+            <zone xml:id="c2-p4-l6"
+               points=" 836,1073 846,1154 1822,1073 2883,974 2864,859 1678,987 "/>
+            <zone xml:id="c2-p4-l7"
+               points=" 871,1167 866,1263 1787,1182 2824,1075 2814,990 1612,1107 "/>
+            <zone xml:id="c2-p4-l8"
+               points=" 828,1285 846,1387 1732,1301 2791,1190 2776,1087 1538,1227 "/>
+            <zone xml:id="c2-p4-l9" points=" 883,1417 895,1515 1816,1403 2867,1302 2856,1198 "/>
+            <zone xml:id="c2-p4-l10"
+               points=" 868,1561 867,1642 1844,1535 2826,1430 2819,1323 1592,1461 "/>
+            <zone xml:id="c2-p4-l11" points=" 872,1663 880,1759 2935,1546 2935,1426 "/>
+            <zone xml:id="c2-p4-l12" points=" 884,1774 884,1890 1926,1782 1923,1666 "/>
+            <zone xml:id="c2-p4-l13"
+               points=" 1006,1891 998,2003 1946,1946 2878,1858 2871,1738 1626,1842 "/>
+            <zone xml:id="c2-p4-l14"
+               points=" 906,2026 931,2137 1603,2059 2172,2014 2168,1934 1292,2006 "/>
+            <zone xml:id="c2-p4-l15"
+               points=" 1020,2139 1018,2243 1790,2174 2835,2091 2834,1970 1644,2073 "/>
+            <zone xml:id="c2-p4-l16"
+               points=" 979,2247 986,2407 1866,2325 2896,2210 2914,2105 1640,2207 "/>
+            <zone xml:id="c2-p4-l17"
+               points=" 915,2419 912,2533 1631,2502 2484,2427 2814,2395 2835,2278 1279,2414 "/>
+            <zone xml:id="c2-p4-l18" points=" 944,2577 938,2693 1590,2635 2251,2590 2270,2462 "/>
+            <zone xml:id="c2-p4-l19" points=" 1334,2705 1319,2893 1795,2901 1819,2706 "/>
+            <zone xml:id="c2-p4-l20" points=" 1958,2715 1952,2877 2760,2845 2756,2681 "/>
+            <zone xml:id="c2-p4-l21" points=" 1319,3078 1331,3261 1999,3247 1987,3035 "/>
+            <zone xml:id="c2-p4-l22" points=" 2211,2985 2203,3170 2771,3131 2791,2950 "/>
+            <zone xml:id="c2-p4-l23" points=" 208,2269 168,2662 812,2639 826,2273 "/>
+         </surface>
+      </facsimile>
+      <text>
+         <body>
+            <div type="titre">
+               <head facs="#c2-p1-l1">Mariage</head>
+               <lb/>
+               <p>
+                  <date facs="#c2-p1-l2" when="1761-10-11">11 octobre 1761</date>
+               </p>
+            </div>
+            <div type="clauses">
+               <p>
+                  <l facs="#c2-p1-l3">Par devant les conseillers du roy notaires</l>
+                  <l facs="#c2-p1-l4">au châtelet de Paris soussignés furent presents <persName
+                        ref="#MD">Michel</persName></l>
+                  <l facs="#c2-p1-l5"><persName ref="#MD">Datte</persName>, <roleName corresp="#MD"
+                        >imprimeur</roleName> demeurant à <placeName ref="#Paris" corresp="#MD"
+                        >Paris</placeName>
+                     <placeName ref="#rue_st_germ_aux" corresp="#MD">rue</placeName> &amp;
+                        <placeName ref="#paroisse_st_ger_aux" corresp="#MD">paroisse saint
+                        Germain</placeName></l>
+                  <l facs="#c2-p1-l6"><placeName>l’Auxerois</placeName> majeur fils et de défunts
+                        <persName ref="#GD">Gabriel Datte</persName>
+                     <roleName corresp="#GD">cocher</roleName> et</l>
+                  <l facs="#c2-p1-l7">de <persName ref="CG">Claudine Gaudrou</persName> au jour de
+                     son décès sa veuve</l>
+                  <l facs="#c2-p1-l8">pour luy et en son nom</l>
+                  <l facs="#c2-p1-l9">d’une part.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p1-l10">Et <persName ref="#MCC">Marie Catherine Coppé</persName>
+                     <roleName corresp="#MCC">ouvrière en linge</roleName></l>
+                  <l facs="#c2-p1-l11">demeurant à <placeName ref="#Paris" corresp="#MCC"
+                        >Paris</placeName>
+                     <placeName ref="#rue_st_germ_aux" corresp="#MCC">susdite rue</placeName> &amp;
+                        <placeName ref="#paroisse_st_germ_aux" corresp="#MCC">paroisse</placeName>
+                     majeure fille de</l>
+                  <l facs="#c2-p1-l12">défunts <persName ref="#NC">Nicolas Coppé</persName>
+                     <roleName corresp="#ND">commis à l’imprimerie royale</roleName> &amp;</l>
+                  <l facs="#c2-p1-l13">de <persName ref="#MHa">Margueritte Hazling</persName> sa
+                     femme décédée sa veuve pour elle</l>
+                  <l facs="#c2-p1-l14">et en son consentement d’autre part.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p1-l15">Lesquelles partis pour raison du mariage proposé</l>
+                  <l facs="#c2-p1-l16">et convenu entre ledit <persName ref="#MD">Michel
+                        Datte</persName> et ladite <persName ref="#MCC">Marie
+                     Catherine</persName></l>
+                  <l facs="#c2-p1-l17"><persName ref="#MCC">Coppé</persName> dont la célébration se
+                     fera incessament en face de notre mère</l>
+                  <l facs="#c2-p1-l18">sainte église en ont fait &amp; arretté entre elles les
+                     conditions civiles qui</l>
+                  <l facs="#c2-p1-l19">suivent.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p1-l20">Les <rs type="person" ref="#MD #MCC">futurs époux</rs> seront
+                     communs en tout biens</l>
+                  <l facs="#c2-p2-l1">meubles &amp; conquets immeubles suivant la coutume de Paris
+                     au désir</l>
+                  <l facs="#c2-p2-l2">de laquelle leur future communauté sera régie &amp; partagée
+                     encore</l>
+                  <l facs="#c2-p2-l3">qu’ils fissent par la suite leur demeure ou des acquisitions
+                     en pays</l>
+                  <l facs="#c2-p2-l4">et loix coutumes ou usages contraires auxquels en
+                     expressements</l>
+                  <l facs="#c2-p2-l5">derogé &amp; renoncé : ils ne seront néanmoins point tenus
+                     des</l>
+                  <l facs="#c2-p2-l6">dettes &amp; hypotheques l’un de l’autre antérieurs à la
+                     célébration de leur</l>
+                  <l facs="#c2-p2-l7">mariage et s’il y en a elles seront payées &amp; acquitées par
+                     celuy des</l>
+                  <l facs="#c2-p2-l8">deux qui les aura contractés et sur ses biens sans que
+                     l’autre</l>
+                  <l facs="#c2-p2-l9">ni ses biens en soient aucunement tenus.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p2-l10">Les biens du <rs type="person" ref="#MD">futur époux</rs>
+                     consistent en la somme</l>
+                  <l facs="#c2-p2-l11">de <measure type="biens_propre" quantity="400" unit="livres"
+                        corresp="#MD">quatre cent livres</measure> composée des habits,</l>
+                  <l facs="#c2-p2-l12">linges &amp; hardes à son usage, meubles meublans &amp;
+                     devise</l>
+                  <l facs="#c2-p2-l13">comptant dont du tout il a donné connaissance de bonne
+                     foy</l>
+                  <l facs="#c2-p2-l14">à sadite future épouse.</l></p>
+               <p>
+                  <l facs="#c2-p2-l15">Ceux de la <rs type="person" ref="#MCC">future épouse</rs>
+                     consistent en la somme</l>
+                  <l facs="#c2-p2-l16">de <measure type="biens_propres" quantity="600" unit="livres"
+                        corresp="#MCC">six cent livres</measure>, composée pareillement des habits,
+                     linges</l>
+                  <l facs="#c2-p2-l17">et hardes à son usage meubles meublant &amp; deniers
+                     comptant,</l>
+                  <l facs="#c2-p2-l18">le tout que <rs type="person" ref="#MD">ledit futur
+                        époux</rs> reconnaît avoir en sa possession &amp; s’en</l>
+                  <l facs="#c2-p2-l19">charge envers <rs type="person" ref="#MCC">ladite future
+                        épouse</rs>.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p2-l20">Desquels biens de chacun <rs type="person" ref="#MD #MCC"
+                        >lesdits futurs époux</rs> il entrera</l>
+                  <l facs="#c2-p2-l21">de part &amp; d’autre en communauté la somme de <measure
+                        type="biens_communs" quantity="200" unit="livres" corresp="#MD #MCC">deux
+                        cents</measure></l>
+                  <l facs="#c2-p2-l22">livres &amp; le surplus avec ce qui précédant ledit mariage
+                     aviendra</l>
+                  <l facs="#c2-p2-l23">et échera à chacun d’eux par succession, donation, legs
+                     ou</l>
+                  <l facs="#c2-p2-l24">autrement tant en meubles qu’immeubles, leur sera &amp;
+                     demeurera</l>
+                  <l facs="#c2-p2-l25">propres &amp; aux leurs de chacun leur côté &amp; ligne.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p2-l26"><rs type="person" ref="#MD">Le futur époux</rs> a doué &amp;
+                     doue <rs type="person" ref="#MCC">ladite future épouse</rs></l>
+                  <l facs="#c2-p2-l27">de <measure type="douaire" quantity="300" unit="livres"
+                        corresp="#MCC">trois cent livres</measure> de douaire préfix une fois
+                     payée</l>
+                  <l facs="#c2-p2-l28">dont elle jouira dès qu’il aura lieu au desir de la coutume
+                     de</l>
+                  <l facs="#c2-p2-l29">Paris.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p2-l30">Le survivant <rs type="person" ref="#MD #MCC">desdits futurs
+                        époux</rs> aura et prendra pour</l>
+                  <l facs="#c2-p3-l1">preciput <del>&amp;</del> avant partage faire des biens
+                     meubles de ladite</l>
+                  <l facs="#c2-p3-l2">communauté, tels d’iceux qu’il voudra choisir suivant la</l>
+                  <l facs="#c2-p3-l3">prisée de l’inventaire qui en sera fait &amp; sans crue
+                     jusqu’à</l>
+                  <l facs="#c2-p3-l4">concurrence de la somme de <measure type="preciput"
+                        quantity="150" unit="livres" corresp="#MCC">cent cinquante livres</measure>
+                     ou ladite</l>
+                  <l facs="#c2-p3-l5">somme en deniers comptant au choix du survivant.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p3-l6">Le remploy des propres aliennés s’il a lieu se fera</l>
+                  <l facs="#c2-p3-l7">suivant la coutume de Paris &amp; l’action d’iceluy sera</l>
+                  <l facs="#c2-p3-l8">réputée propre &amp; de nature immobiliaire et à celuy des
+                     deux</l>
+                  <l facs="#c2-p3-l9">qui aura droit de l’exercer &amp; aux siens de son côté &amp;
+                     ligne.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p3-110">En renonceant par la <rs type="person" ref="#MCC">future
+                        épouse</rs> &amp; les enfants</l>
+                  <l facs="#c2-p3-l11">qui naîtront dudit futur mariage <add facs="#c2-p3-l11b"
+                        place="margin">à la communauté établie par le présent contrat</add> ils
+                     reprendront tout ce que</l>
+                  <l facs="#c2-p3-l12"><rs type="person" ref="#MCC">ladite future épouse</rs> aura
+                     apporté audit mariage ensemble</l>
+                  <l facs="#c2-p3-l13">ce qui pendant iceluy luy sera avenu et écheu <del>pendant
+                        iceluy</del></l>
+                  <l facs="#c2-p3-l14">pour succession, donation, legs ou autrement tant en
+                     meubles</l>
+                  <l facs="#c2-p3-l15">qu’immeubles ; même si c’est <rs type="person" ref="#MCC"
+                        >ladite future épouse</rs></l>
+                  <l facs="#c2-p3-l16">qui exerce cette faculté elle reprendra en outre ses
+                     douaire</l>
+                  <l facs="#c2-p3-l17">&amp; preciput tels que dessus stipulés le tout franc &amp;
+                     quitte</l>
+                  <l facs="#c2-p3-l18">des dettes &amp; hypothèques de ladite communauté encore</l>
+                  <l facs="#c2-p3-l19">qu’elle s’y fut obligée ou y eut été condamnée dont audit</l>
+                  <l facs="#c2-p3-l20">cas elle et ses enfants seront acquittés, garantis &amp;</l>
+                  <l facs="#c2-p3-l21">indemnisés par <rs type="person" ref="#MD">ledit futur
+                        époux</rs> &amp; sur ses biens pour raison</l>
+                  <l facs="#c2-p3-l22">de quoy &amp; pour toutes les clauses &amp; conditions du
+                     présent</l>
+                  <l facs="#c2-p3-l23">contrat hypothèque aura lieu de ce jour sur les bien dudit
+                     futur</l>
+                  <l facs="#c2-p3-l24"><rs type="person" ref="#MD">époux</rs>.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p3-l25">Et pour l’amitié que <rs type="person" ref="#MD #MCC">lesdits
+                        futurs époux</rs> disent</l>
+                  <l facs="#c2-p3-l26">se porter dont ils desirent se donner les marques, ils se
+                     sont</l>
+                  <l facs="#c2-p3-l27">par ces présentes fait donation entre vifs et irrévocable</l>
+                  <l facs="#c2-p3-l28">l’un à l’autre &amp; au survivant d’eux, ce acceptant
+                     respectivement</l>
+                  <l facs="#c2-p3-l29">pour ledit survivant &amp; ce en la meilleure forme</l>
+                  <l facs="#c2-p4-l1"><del>meilleure forme</del> que donation puisse valoir &amp;
+                     avoir lieu de tous</l>
+                  <l facs="#c2-p4-l2">&amp; chacun des biens meubles acquets &amp; conquets
+                     immeubles <add facs="#c2-p4-l2b" place="margin">propres et autres</add></l>
+                  <l facs="#c2-p4-l3">qui se trouveront appartenir au premier mourant desdits</l>
+                  <l facs="#c2-p4-l4"><rs type="person" ref="#MD #MCC">futurs époux</rs> au jour de
+                     son décès <add facs="#c2-p4-l4b" place="margin">en quoy que le tout puisse
+                        consister et en quelque pays que lesdits biens soient deus et situés sans
+                        aucune exception ny réserve</add> pour en jouir</l>
+                  <l facs="#c2-p4-l5">par ledit survivant en toute propriété pourvu toutesfois</l>
+                  <l facs="#c2-p4-l6">qu’au jour du décès du premier mourant il n’y ait aucun</l>
+                  <l facs="#c2-p4-l7">enfant vivant né ou à naître dudit mariage &amp; s’il y en
+                     avait</l>
+                  <l facs="#c2-p4-l8">&amp; qu’il ne vinssent à décéder en minorité ou avant d’avoir
+                     été</l>
+                  <l facs="#c2-p4-l9">pourvu par mariage, fait profession en religion ou d’avoir</l>
+                  <l facs="#c2-p4-l10">pré valablement disposer de leurs biens en ce cas ladite</l>
+                  <l facs="#c2-p4-l11">donation reprendrait sa force &amp; vertu comme s’il n’y
+                     avait</l>
+                  <l facs="#c2-p4-l12">point eu d’enfant audit mariage.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p4-l13">Et pour faire insinuer ces présentes où besoin sera</l>
+                  <l facs="#c2-p4-l14">il en est donné tout pouvoir au porteur.</l>
+               </p>
+               <p>
+                  <l facs="#c2-p4-l15">Car ainsy promettant, obligeant, renonceant, fait &amp;</l>
+                  <l facs="#c2-p4-l16">passé à <placeName ref="#Paris">Paris</placeName> en l’étude
+                     de <persName>Sibire</persName>
+                     <unclear cert="low">luy de notaire sousigné</unclear></l>
+               </p>
+               <p>
+                  <l facs="#c2-p4-l17">L’an <date when="1761-10-11">mil sept cent soixante un le
+                        onze</date></l>
+                  <l facs="#c2-p4-l18"><date when="1761-10-11">octobre</date> avant midy &amp; ont
+                     signé</l>
+               </p>
+               <p>
+                  <l facs="#c2-p4-l23"><add place="margin">Rayé au present <unclear cert="low">de
+                           part</unclear> notés comme nuls.</add></l>
+               </p>
+            </div>
+            <div type="signatures">
+               <signed facs="#c2-p4-l19" corresp="#MD">Datte</signed>
+               <signed facs="#c2-p4-l20" corresp="#MCC">M.C.Coppée</signed>
+               <signed facs="#c2-p4-l21" corresp="#Chime">Chime</signed>
+               <signed facs="#c2-p4-l22" corresp="#Sibire">Sibire</signed>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI n="3">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Contrat de mariage de Michel Brice et Françoise Marguerite Blaut</title>
+               <author ref="#Andrieu">Jean Andrieu</author>
+            </titleStmt>
+            <publicationStmt>
+               <p>Transcription encodée et enrichie du contrat de mariage de Michel Brice et
+                  Françoise Marguerite Blaut, réalisée dans le cadre du master TNAH de l'Ecole
+                  nationale des chartes.</p>
+            </publicationStmt>
+            <sourceDesc>
+               <msDesc xml:id="MC-ET-IV-573">
+                  <msIdentifier>
+                     <repository>
+                        <name>Archives nationales de France</name>
+                        <address>
+                           <addrLine>60, rue des Francs Bourgeois,</addrLine>
+                           <addrLine>75003</addrLine>
+                           <addrLine>Paris</addrLine>
+                        </address>
+                     </repository>
+                     <idno type="cote">MC/ET/IV/573</idno>
+                     <msName>Minutes et répertoires du notaire Jean ANDRIEU, 22 juillet 1744 - 7 mai
+                        1765 (étude IV)</msName>
+                  </msIdentifier>
+                  <head>
+                     <title>Mariage.</title>
+                     <origDate when="1751-06-16">16 juin 1751</origDate>
+                  </head>
+                  <history>
+                     <origin notBefore="1744-07-22" notAfter="1765-05-07">Minutes et répertoires du
+                        notaire Jean ANDRIEU.</origin>
+                     <provenance>
+                        <p>Étude notariale IV (Paris ; 1576-2002)</p>
+                        <p>L'étude est située en 1576 rue Saint-Honoré. Le premier notaire à avoir
+                           laissé des minutes qui nous soient parvenues est Claude Jourdin. Ses
+                           successeurs s'installent paroisse Saint-Jean-en-Grève durant tout le
+                           XVIIe siècle. En 1720, l'étude a pour adresse rue de la Tixeranderie,
+                           près de la rue du Coq. A l'extrême fin du XVIIIe siècle, on la retrouve
+                           rue Neuve-Saint-Eustache (1798-1800). Située ensuite rue d'Aboukir, elle
+                           est rue Poissonnière en 1884. Sa dernière adresse, au XXe siècle, est 13,
+                           rue du Quatre-Septembre.Depuis 2002, elle est absorbée par l'étude
+                           XXVIII, laquelle se trouve 10, rue Saint-Antoine.</p>
+                     </provenance>
+                     <acquisition>Versement.</acquisition>
+                  </history>
+                  <additional>
+                     <adminInfo>
+                        <availability status="restricted">
+                           <p>Minutes et répertoires : la loi 2008-696 du 15 juillet 2008 relative
+                              aux archives a fixé à 75 ans à compter de la date de l'acte, ou à 25
+                              ans à compter de la date du décès de l'intéressé si ce délai est plus
+                              bref, le délai de communication des minutes et répertoires des
+                              notaires ; ce délai est porté à 100 ans à compter de la date de l'acte
+                              si le document se rapporte à un mineur (code du Patrimoine, articles
+                              L213-2, 4e d et 5e).</p>
+                           <p>Les documents peuvent être librement reproduits à usage privé du
+                              copiste, sous réserve des contraintes liées à leur état matériel et
+                              dans le respect des textes relatifs à la réutilisation des
+                              informations publiques.</p>
+                        </availability>
+                     </adminInfo>
+                  </additional>
+               </msDesc>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <settingDesc>
+               <listPlace>
+                  <place xml:id="danvillers" type="city">
+                     <placeName>
+                        <sic>Danvillers</sic>
+                        <corr corresp="https://www.wikidata.org/wiki/Q195737">Damvillers</corr>
+                     </placeName>
+                     <location>
+                        <district type="departement">Meuse</district>
+                        <district type="region">Lorraine</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="diocese_verdun" type="diocèse">
+                     <placeName>diocèse de Verdun</placeName>
+                     <location>
+                        <district type="departement">Meuse</district>
+                        <district type="region">Lorraine</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="luneville" type="city">
+                     <placeName>Lunéville</placeName>
+                     <location>
+                        <district type="departement">Meurthe-et-Moselle</district>
+                        <district type="region">Lorraine</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="rue_au_maire" type="street">
+                     <placeName>rue au Maire</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">IIIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="paroisse_st_nic_des_ch" type="paroisse">
+                     <placeName>paroisse saint Nicolas des Champs</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">IIIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="rue_bourre_abbe" type="street">
+                     <placeName>rue Bourre l’Abbé</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <district type="arrondissement">IIIème</district>
+                        <country>France</country>
+                     </location>
+                  </place>
+                  <place xml:id="paroisse_st_leu_st_gi" type="paroisse">
+                     <placeName>paroisse Saint-Leu-Saint-Gilles</placeName>
+                     <location>
+                        <settlement type="city">Paris</settlement>
+                        <country>France</country>
+                     </location>
+                  </place>
+               </listPlace>
+            </settingDesc>
+            <particDesc>
+               <listPerson>
+                  <person xml:id="Andrieu" role="notaire">
+                     <persName>
+                        <forename type="first">Jean</forename>
+                        <surname>Andrieu</surname>
+                     </persName>
+                     <occupation notBefore="1744-07-22" notAfter="1765-05-07">notaire</occupation>
+                  </person>
+                  <person xml:id="MB" role="epoux">
+                     <persName>
+                        <forename type="first">Michel</forename>
+                        <surname>Brice</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#rue_au_maire">rue au Maire</placeName>
+                        <placeName ref="#paroisse_st_nic_des_ch">paroisse saint
+                           Nicolas-des-Champs</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>domestique</occupation>
+                  </person>
+                  <person xml:id="FMB" role="epouse">
+                     <persName>
+                        <forename type="first">Françoise</forename>
+                        <forename type="middle">Margueritte</forename>
+                        <surname>Blaut</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#rue_bourre_abbe">rue Bourre l’Abbé</placeName>
+                        <placeName ref="#paroisse_st_leu_st_gi">paroisse
+                           Saint-Leu-Saint-Gilles</placeName>
+                        <settlement ref="#Paris">Paris</settlement>
+                        <country>France</country>
+                     </residence>
+                     <occupation>ouvrière en linge</occupation>
+                  </person>
+                  <person xml:id="HB" role="pere_epoux">
+                     <persName>
+                        <forename type="first">Henry</forename>
+                        <surname>Brice</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#danvillers">Danvillers</placeName>
+                        <placeName ref="#diocese_verdun">diocèse de Verdun</placeName>
+                        <country>France</country>
+                     </residence>
+                     <occupation>chapelier</occupation>
+                  </person>
+                  <person xml:id="FH" role="mere_epoux">
+                     <persName>
+                        <forename type="first">Françoise</forename>
+                        <surname>Herard</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="danvillers">Danvillers</placeName>
+                        <placeName ref="#diocese_verdun">diocèse de Verdun</placeName>
+                        <country>France</country>
+                     </residence>
+                  </person>
+                  <person xml:id="JNB" role="pere_epouse">
+                     <persName>
+                        <forename type="first">Jean</forename>
+                        <forename type="middle">Nicolas</forename>
+                        <surname>Blaut</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#luneville">Lunéville</placeName>
+                        <country>France</country>
+                     </residence>
+                     <occupation>maître tailleur</occupation>
+                  </person>
+                  <person xml:id="JT" role="mere_epouse">
+                     <persName>
+                        <forename type="first">Jeanne</forename>
+                        <surname>Talfumiere</surname>
+                     </persName>
+                     <residence>
+                        <placeName ref="#luneville">Lunéville</placeName>
+                        <country>France</country>
+                     </residence>
+                  </person>
+                  <person xml:id="JD" role="temoin">
+                     <persName>
+                        <forename type="first">Jacques</forename>
+                        <surname>Damas</surname>
+                     </persName>
+                     <occupation>bourgeois de Paris</occupation>
+                  </person>
+                  <person xml:id="AT" role="temoin">
+                     <persName>
+                        <forename type="first">Armand</forename>
+                        <surname>Tullou</surname>
+                     </persName>
+                     <occupation>musicien</occupation>
+                  </person>
+                  <person xml:id="JJM" role="temoin">
+                     <persName>
+                        <forename type="first">Jean</forename>
+                        <forename type="middle">Jacques</forename>
+                        <surname>Morel</surname>
+                     </persName>
+                     <occupation>bourgeois de Paris</occupation>
+                  </person>
+                  <person xml:id="LC" role="temoin">
+                     <persName>
+                        <forename type="first">Louis</forename>
+                        <surname>Clemandot</surname>
+                     </persName>
+                     <occupation>marchand de vin</occupation>
+                  </person>
+                  <person xml:id="MMi" role="temoin">
+                     <persName>
+                        <forename type="first">Marie</forename>
+                        <surname>Migourdin</surname>
+                     </persName>
+                  </person>
+                  <listRelation>
+                     <relation name="spouse" mutual="#MB #FMB"/>
+                     <relation name="spouse" mutual="#JNB #JT"/>
+                     <relation name="spouse" mutual="#HB #FH"/>
+                     <relation name="spouse" mutual="#LC #MMi"/>
+                     <relation name="cousin" mutual="#JD #MB"/>
+                     <relation name="parent" active="#JNB #JT" passive="#FMB"/>
+                     <relation name="parent" active="#HB #FH" passive="#MB"/>
+                  </listRelation>
+               </listPerson>
+            </particDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile>
+         <surface>
+            <graphic url="img\MC-ET-IV-573(1).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c3-p1-l1" points=" 159,30 158,97 437,114 439,59 "/>
+            <zone xml:id="c3-p1-l2" points=" 125,107 92,217 733,242 735,136 "/>
+            <zone xml:id="c3-p1-l3" points=" 1169,122 1167,262 1408,264 1406,134 "/>
+            <zone xml:id="c3-p1-l4" points=" 485,235 488,275 1385,324 1384,282 "/>
+            <zone xml:id="c3-p1-l5" points=" 492,283 489,328 1357,370 1353,331 "/>
+            <zone xml:id="c3-p1-l6" points=" 484,346 489,389 1414,421 1418,383 "/>
+            <zone xml:id="c3-p1-l7" points=" 482,398 482,442 1448,478 1450,440 "/>
+            <zone xml:id="c3-p1-l8" points=" 480,451 478,499 1238,524 1238,481 "/>
+            <zone xml:id="c3-p1-l9" points=" 519,524 516,572 1485,611 1482,572 "/>
+            <zone xml:id="c3-p1-l10" points=" 480,590 480,643 1466,666 1459,624 "/>
+            <zone xml:id="c3-p1-l11" points=" 484,656 484,693 1475,727 1469,688 "/>
+            <zone xml:id="c3-p1-l12" points=" 478,709 480,755 1478,777 1471,743 "/>
+            <zone xml:id="c3-p1-l13" points=" 471,775 471,821 1048,823 1048,789 "/>
+            <zone xml:id="c3-p1-l14" points=" 505,857 494,910 1341,917 1341,882 "/>
+            <zone xml:id="c3-p1-l15" points=" 480,919 473,962 1455,969 1453,937 "/>
+            <zone xml:id="c3-p1-l16" points=" 475,971 475,1024 1357,1028 1357,980 "/>
+            <zone xml:id="c3-p1-l17" points=" 471,1044 469,1090 1352,1104 1354,1060 "/>
+            <zone xml:id="c3-p1-l18" points=" 471,1117 471,1156 1293,1165 1300,1117 "/>
+            <zone xml:id="c3-p1-l19" points=" 469,1170 473,1218 1361,1238 1368,1200 "/>
+            <zone xml:id="c3-p1-l20" points=" 475,1248 469,1298 1302,1302 1311,1266 "/>
+            <zone xml:id="c3-p1-l21" points=" 462,1321 462,1364 1386,1389 1398,1346 "/>
+            <zone xml:id="c3-p1-l22" points=" 459,1389 450,1449 733,1447 742,1401 "/>
+            <zone xml:id="c3-p1-l23" points=" 439,1832 439,1878 1437,1882 1441,1846 "/>
+            <zone xml:id="c3-p1-l24" points=" 437,1887 437,1926 683,1928 685,1887 "/>
+            <zone xml:id="c3-p1-l25" points=" 480,1933 478,1974 1439,1965 1437,1940 "/>
+            <zone xml:id="c3-p1-l26" points=" 424,1972 423,2009 1061,2018 1062,1987 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-IV-573(2).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c3-p2-l1" points=" 994,498 995,604 1971,618 2966,651 2963,548 "/>
+            <zone xml:id="c3-p2-l2" points=" 986,615 987,695 1979,708 2926,756 2924,678 1879,623 "/>
+            <zone xml:id="c3-p2-l3" points=" 979,734 980,811 1934,814 3015,892 3002,799 2008,728 "/>
+            <zone xml:id="c3-p2-l4" points=" 982,826 982,920 2060,919 3011,1018 3011,935 1927,832 "/>
+            <zone xml:id="c3-p2-l5" points=" 970,940 983,1030 1551,1026 1552,939 "/>
+            <zone xml:id="c3-p2-l6" points=" 998,1056 1000,1142 2903,1178 2896,1088 "/>
+            <zone xml:id="c3-p2-l7" points=" 984,1164 984,1250 2936,1275 2926,1207 "/>
+            <zone xml:id="c3-p2-l8" points=" 964,1268 976,1366 2960,1382 2950,1306 "/>
+            <zone xml:id="c3-p2-l9" points=" 959,1395 959,1484 2934,1462 2932,1387 "/>
+            <zone xml:id="c3-p2-l10" points=" 964,1500 967,1587 2943,1578 2940,1492 "/>
+            <zone xml:id="c3-p2-l11" points=" 986,1616 992,1723 2927,1726 2920,1644 "/>
+            <zone xml:id="c3-p2-l12" points=" 936,1747 936,1836 2852,1818 2858,1743 "/>
+            <zone xml:id="c3-p2-l13" points=" 947,1856 935,1971 2866,1932 2855,1836 "/>
+            <zone xml:id="c3-p2-l14" points=" 931,1990 934,2075 2870,2056 2879,1958 "/>
+            <zone xml:id="c3-p2-l15" points=" 939,2096 939,2187 2284,2152 2284,2072 "/>
+            <zone xml:id="c3-p2-l16" points=" 955,2199 971,2294 2914,2302 2908,2191 "/>
+            <zone xml:id="c3-p2-l17" points=" 923,2304 922,2407 2882,2404 2887,2303 "/>
+            <zone xml:id="c3-p2-l18" points=" 932,2424 932,2515 2923,2504 2934,2428 "/>
+            <zone xml:id="c3-p2-l19" points=" 910,2535 908,2616 2870,2618 2882,2515 "/>
+            <zone xml:id="c3-p2-l20" points=" 926,2632 931,2720 2847,2706 2847,2626 "/>
+            <zone xml:id="c3-p2-l21" points=" 928,2738 934,2824 2846,2814 2846,2728 "/>
+            <zone xml:id="c3-p2-l22" points=" 911,2847 916,2940 1366,2930 1368,2842 "/>
+            <zone xml:id="c3-p2-l23" points=" 991,2951 992,3042 2855,3067 2858,2979 "/>
+            <zone xml:id="c3-p2-l24" points=" 902,3047 919,3158 2850,3175 2843,3074 "/>
+            <zone xml:id="c3-p2-l25" points=" 890,3164 903,3243 2856,3283 2846,3195 "/>
+            <zone xml:id="c3-p2-l26" points=" 872,3256 875,3350 2856,3390 2862,3291 "/>
+            <zone xml:id="c3-p2-l27" points=" 879,3364 884,3454 2871,3514 2876,3407 "/>
+            <zone xml:id="c3-p2-l28" points=" 875,3484 883,3584 2854,3630 2863,3535 "/>
+            <zone xml:id="c3-p2-l29" points=" 1042,3603 1044,3702 2728,3759 2720,3658 "/>
+            <zone xml:id="c3-p2-l30" points=" 883,3707 903,3856 2400,3888 2403,3783 "/>
+            <zone xml:id="c3-p2-l31" points=" 236,1910 230,2160 851,2154 838,1915 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-IV-573(3).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c3-p3-l1" points=" 886,440 887,614 2707,751 2706,654 "/>
+            <zone xml:id="c3-p3-l2" points=" 890,619 892,700 2775,859 2783,772 "/>
+            <zone xml:id="c3-p3-l3" points=" 883,720 879,820 2211,923 2223,820 "/>
+            <zone xml:id="c3-p3-l4" points=" 879,827 876,927 2855,1079 2846,996 "/>
+            <zone xml:id="c3-p3-l5" points=" 866,942 860,1031 2835,1164 2848,1091 "/>
+            <zone xml:id="c3-p3-l6" points=" 866,1046 854,1138 2806,1274 2818,1190 "/>
+            <zone xml:id="c3-p3-l7" points=" 840,1155 834,1264 2830,1404 2835,1304 "/>
+            <zone xml:id="c3-p3-l8" points=" 828,1295 827,1383 2802,1495 2808,1412 "/>
+            <zone xml:id="c3-p3-l9" points=" 818,1407 819,1503 1403,1530 1424,1432 "/>
+            <zone xml:id="c3-p3-l10" points=" 834,1515 831,1627 2851,1772 2851,1683 "/>
+            <zone xml:id="c3-p3-l11" points=" 826,1650 828,1744 2799,1864 2802,1780 "/>
+            <zone xml:id="c3-p3-l12" points=" 812,1879 819,1774 2830,1878 2823,1967 "/>
+            <zone xml:id="c3-p3-l13" points=" 810,1891 811,1986 1255,1996 1264,1922 "/>
+            <zone xml:id="c3-p3-l14" points=" 816,1999 814,2116 2778,2187 2774,2100 "/>
+            <zone xml:id="c3-p3-l15" points=" 778,2128 767,2226 2790,2300 2794,2212 "/>
+            <zone xml:id="c3-p3-l16" points=" 771,2238 778,2350 2815,2435 2804,2340 "/>
+            <zone xml:id="c3-p3-l17" points=" 754,2367 742,2459 2799,2550 2803,2460 "/>
+            <zone xml:id="c3-p3-l18" points=" 754,2594 755,2495 2780,2564 2790,2651 "/>
+            <zone xml:id="c3-p3-l19" points=" 746,2696 740,2615 2746,2664 2746,2754 "/>
+            <zone xml:id="c3-p3-l20" points=" 698,2828 707,2720 2736,2763 2748,2860 "/>
+            <zone xml:id="c3-p3-l21" points=" 708,2936 706,2842 2728,2876 2726,2968 "/>
+            <zone xml:id="c3-p3-l22" points=" 703,3047 704,2943 2808,2995 2818,3090 "/>
+            <zone xml:id="c3-p3-l23" points=" 678,3164 674,3074 2751,3094 2754,3191 "/>
+            <zone xml:id="c3-p3-l24" points=" 686,3296 686,3190 2751,3199 2754,3271 "/>
+            <zone xml:id="c3-p3-l25" points=" 672,3430 675,3319 2622,3300 2622,3387 "/>
+            <zone xml:id="c3-p3-l26" points=" 675,3556 675,3439 2791,3428 2806,3530 "/>
+            <zone xml:id="c3-p3-l27" points=" 656,3672 656,3586 1111,3572 1118,3674 "/>
+            <zone xml:id="c3-p3-l28" points=" 706,3828 714,3726 2740,3722 2767,3840 "/>
+            <zone xml:id="c3-p3-l29" points=" 608,3980 592,3860 2720,3878 2714,4003 "/>
+         </surface>
+         <surface>
+            <graphic url="img\MC-ET-IV-573(4).JPG" width="3064.33334px" height="4592.33334px"/>
+            <zone xml:id="c3-p4-l1" points=" 924,471 2795,539 2810,618 918,584 "/>
+            <zone xml:id="c3-p4-l2" points=" 911,599 911,686 2790,703 2794,627 "/>
+            <zone xml:id="c3-p4-l2b" points=" 254,608 272,470 811,511 800,603 "/>
+            <zone xml:id="c3-p4-l3" points=" 907,820 919,716 2910,719 2920,803 "/>
+            <zone xml:id="c3-p4-l4" points=" 916,914 918,827 2872,818 2878,883 "/>
+            <zone xml:id="c3-p4-l5" points=" 916,1027 923,938 2747,922 2763,1016 "/>
+            <zone xml:id="c3-p4-l6" points=" 911,1158 910,1051 2923,1046 2936,1116 "/>
+            <zone xml:id="c3-p4-l7" points=" 907,1268 910,1180 2854,1142 2859,1216 "/>
+            <zone xml:id="c3-p4-l8" points=" 912,1379 907,1299 2839,1255 2844,1343 "/>
+            <zone xml:id="c3-p4-l9" points=" 896,1503 898,1400 2708,1378 2711,1463 "/>
+            <zone xml:id="c3-p4-l10" points=" 908,1623 899,1523 2724,1492 2724,1575 "/>
+            <zone xml:id="c3-p4-l11" points=" 943,1784 938,1662 2850,1628 2852,1700 "/>
+            <zone xml:id="c3-p4-l12" points=" 924,1872 922,1795 2924,1712 2928,1800 "/>
+            <zone xml:id="c3-p4-l12b" points=" 144,1591 142,1492 674,1478 670,1560 "/>
+            <zone xml:id="c3-p4-l13" points=" 899,1999 890,1883 2826,1823 2842,1890 "/>
+            <zone xml:id="c3-p4-l14" points=" 898,2119 886,2022 2800,1916 2812,2007 "/>
+            <zone xml:id="c3-p4-l15" points=" 898,2228 892,2142 2832,2035 2840,2134 "/>
+            <zone xml:id="c3-p4-l16" points=" 916,2336 904,2232 2783,2155 2783,2247 "/>
+            <zone xml:id="c3-p4-l17" points=" 916,2448 910,2356 2888,2284 2895,2391 "/>
+            <zone xml:id="c3-p4-l18" points=" 886,2572 891,2468 1782,2448 1778,2504 "/>
+            <zone xml:id="c3-p4-l19" points=" 998,2663 996,2574 2784,2558 2790,2643 "/>
+            <zone xml:id="c3-p4-l20" points=" 908,2804 907,2699 2810,2647 2824,2732 "/>
+            <zone xml:id="c3-p4-l21" points=" 924,2890 919,2812 2868,2760 2879,2848 "/>
+            <zone xml:id="c3-p4-l22" points=" 896,2998 899,2910 2888,2880 2887,2968 "/>
+            <zone xml:id="c3-p4-l23" points=" 916,3136 912,3015 2918,2999 2943,3095 "/>
+            <zone xml:id="c3-p4-l24" points=" 927,3250 922,3155 1283,3144 1283,3220 "/>
+            <zone xml:id="c3-p4-l25" points=" 870,3415 859,3290 2611,3298 2618,3411 "/>
+            <zone xml:id="c3-p4-l26" points=" 854,3546 848,3426 1472,3416 1459,3510 "/>
+            <zone xml:id="c3-p4-l27" points=" 1494,3554 1480,3443 1832,3448 1827,3524 "/>
+            <zone xml:id="c3-p4-l28" points=" 783,3746 756,3560 1123,3559 1111,3691 "/>
+            <zone xml:id="c3-p4-l29" points=" 1466,3747 1468,3575 1866,3559 1868,3704 "/>
+            <zone xml:id="c3-p4-l30" points=" 954,4072 948,3900 1370,3915 1355,4106 "/>
+            <zone xml:id="c3-p4-l31" points=" 1978,3779 1979,3560 2879,3519 2883,3694 "/>
+            <zone xml:id="c3-p4-l32" points=" 1843,4139 1850,3963 2704,3970 2714,4128 "/>
+            <zone xml:id="c3-p4-l33" points=" 1876,4345 1879,4158 2522,4163 2506,4339 "/>
+         </surface>
+      </facsimile>
+      <text>
+         <body>
+            <div type="titre">
+               <head facs="#c3-p1-l1">Mariage</head>
+               <lb/>
+               <p facs="#c3-p1-l2">
+                  <persName ref="#MB">Michel Brice</persName> et <persName ref="#FMB">Françoise
+                     Margueritte Blaut</persName>
+               </p>
+               <lb/>
+               <p facs="#c3-p1-l3">
+                  <date when="1751-06-16">(16 juin 1751)</date>
+               </p>
+
+            </div>
+            <div type="clauses">
+               <p>
+                  <l facs="#c3-p1-l4">Furent présents <persName ref="#MB">Michel
+                     Brice</persName>,</l>
+                  <l facs="#c3-p1-l5"><roleName corresp="#MB">domestique</roleName>, fils majeur de
+                     deffunt <persName ref="#HB">Henry Brice</persName>
+                     <roleName corresp="#HB">chapelier</roleName></l>
+                  <l facs="#c3-p1-l6">à <placeName ref="#danvillers" corresp="#HB #FH"
+                        >Danvillers</placeName>
+                     <placeName ref="#diocese_verdun" corresp="#HB #FH">diocèse de
+                        Verdun</placeName> et <persName ref="#FH">Françoise Herard</persName> sa
+                     femme ses</l>
+                  <l facs="#c3-p1-l7">père et mère ; demeurant à <placeName ref="#Paris"
+                        corresp="#MB">Paris</placeName>
+                     <placeName ref="#rue_au_maire" corresp="#MB">rue au Maire</placeName>
+                     paroisse</l>
+                  <l facs="#c3-p1-l8"><placeName ref="#paroisse_st_nic_des_ch" corresp="#MB">saint
+                        Nicolas des Champs</placeName> pour lui et en son nom d’une part.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p1-l9">Et <persName ref="#FMB">Françoise Margueritte
+                     Blaut</persName>, majeure <roleName corresp="#FMB">ouvrière en
+                     linge</roleName></l>
+                  <l facs="#c3-p1-l10">fille de <persName ref="#JNB">Jean Nicolas Blaut</persName>
+                     <roleName corresp="#JNB">maître tailleur</roleName> à <placeName
+                        ref="#luneville" corresp="#JNB #JT">Lunéville</placeName> et de <persName
+                        ref="#JT">Jeanne</persName></l>
+                  <l facs="#c3-p1-l11"><persName>Talfumiere</persName> sa femme, ses père et mère,
+                        <del>père</del>
+                     <del>elle</del> de sondit père</l>
+                  <l facs="#c3-p1-l12">disant avoir le consentement à l’estat du mariage cy après
+                        <add place="bottom" facs="#c3-p1-l26">à <placeName ref="#Paris"
+                           >Paris</placeName>
+                        <placeName ref="#rue_bourre_abbe">rue Bourre l’Abbé</placeName>
+                        <placeName ref="#paroisse_st_leu_st_gi">paroisse
+                           Saint-Leu-Saint-Gilles</placeName></add> aussy</l>
+                  <l facs="#c3-p1-l13">pour elle et en son nom d’autre part.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p1-l14">Lesquelles parties pour raison du mariage proposé</l>
+                  <l facs="#c3-p1-l15">entre elles dont la célébration se fera en face de notre
+                     mère</l>
+                  <l facs="#c3-p1-l16">sainte église a la première réquisition de l’une d’elles</l>
+                  <l facs="#c3-p1-l17">fait en la présence de <persName ref="#JD">Jacques
+                        Damas</persName>
+                     <roleName corresp="#JD">bourgeois de Paris</roleName></l>
+                  <l facs="#c3-p1-l18">cousin du futur, <persName ref="#AT">sieur Armand
+                        Tullou</persName>
+                     <roleName corresp="AT">musicien</roleName>,</l>
+                  <l facs="#c3-p1-l19"><persName ref="#JJM">sieur Jean Jacques Morel</persName>
+                     <roleName corresp="#JMM">bourgeois de Paris</roleName>, le</l>
+                  <l facs="#c3-p1-l20"><persName ref="#LC">sieur Louis Clemandot</persName>,
+                        <roleName corresp="#LC">marchand de vin à Paris</roleName> et <persName
+                        ref="#MMi">Marie</persName></l>
+                  <l facs="#c3-p1-l21"><persName>Migourdin</persName> sa femme, tous amis communs
+                     desdits</l>
+                  <l facs="#c3-p1-l22"><rs type="person" ref="#FMB #MB">futurs époux</rs>.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p1-l23">Volontairement convenus <unclear cert="medium">d’en
+                        traités</unclear> à condition dud mariage</l>
+                  <l facs="#c3-p1-l24">ainsy qu’il suit.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p1-l25">C’est à savoir que les <rs type="person" ref="#MB #FMB"
+                        >futurs époux</rs> seront communs en</l>
+                  <l facs="#c3-p2-l1">tout bien meuble et conquet immeuble suivant la coutume de
+                     Paris</l>
+                  <l facs="#c3-p2-l2">au desir de laquelle leur future communauté sera régie et
+                     gouvernée</l>
+                  <l facs="#c3-p2-l3">encore que cy après il fissent leur demeure ou des
+                     acquisitions en pays</l>
+                  <l facs="#c3-p2-l4">de coutume, loys et usages contraires aux quels et au regard
+                     expressément</l>
+                  <l facs="#c3-p2-l5">dérogé et renoncé.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p2-l6">Ne seront néanmoins lesdits <rs type="person" ref="#MB #FMB"
+                        >futurs époux</rs> tenus d’aucune dette et</l>
+                  <l facs="#c3-p2-l7">hypothèque l’un de l’autre antérieures à leur futur mariage
+                     mais</l>
+                  <l facs="#c3-p2-l8">si aucune il y a elles serront payées et acquittées par celuy
+                     ou</l>
+                  <l facs="#c3-p2-l9">celle qui en sera le debiteur et sur ses biens particuliers
+                     sans que</l>
+                  <l facs="#c3-p2-l10">l’autre, ses biens ny lad communauté en soient aucunement
+                     tenus.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p2-l11">Les <rs type="person" ref="#MB #FMB">futurs époux</rs> se
+                     prennent aux biens et droits à chacun</l>
+                  <l facs="#c3-p2-l12">d’eux appartenant, consistant quant après au scavoir ceux
+                     dudit</l>
+                  <l facs="#c3-p2-l13"><rs type="person" ref="#MB">futur époux</rs> en la somme de
+                        <measure type="biens_propres" quantity="300" unit="livres" corresp="#MB"
+                        >trois cent livres</measure> tant en deniers</l>
+                  <l facs="#c3-p2-l14">comptant qu’ne meubles, habits, biens et hardes et à son
+                     usage,</l>
+                  <l facs="#c3-p2-l15">le tout provenant de ses gains et épargnes.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p2-l16">Et ceux de ladite future <del>communauté</del> épouse en
+                     pareille somme</l>
+                  <l facs="#c3-p2-l17">de <measure type="biens_propres" quantity="300" unit="livres"
+                        corresp="#FMB">trois cent livres</measure> aussy tant en deniers comptants
+                     qu’en</l>
+                  <l facs="#c3-p2-l18">meubles, habits, linges et hardes à son usage aussy
+                     provenant</l>
+                  <l facs="#c3-p2-l19">de ses gains et épargnes, le tout que ledit <rs type="person"
+                        ref="#MB">futur époux</rs> reconnaît</l>
+                  <l facs="#c3-p2-l20">luy avoir été remis ce jour d’huy par ladite <rs
+                        type="person" ref="#FMB">future épouse</rs></l>
+                  <l facs="#c3-p2-l21">et avoir en sa possession dont il est content et s’en
+                     charge</l>
+                  <l facs="#c3-p2-l22">envers elle.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p2-l23">Desquels biens appartenant à chacun desdits <rs type="person"
+                        ref="#FMB #MB">futurs époux</rs></l>
+                  <l facs="#c3-p2-l24">il en entrera de part et d’autre en ladite future
+                     communauté</l>
+                  <l facs="#c3-p2-l25">la somme de <measure type="biens_communauté" quantity="100"
+                        unit="livres" corresp="#FMB #MB">cent livres</measure> et le surplus avec
+                     tout ce qui</l>
+                  <l facs="#c3-p2-l26">aviendra et échera à chacun desdits futurs époux pendant
+                     ledit</l>
+                  <l facs="#c3-p2-l27">mariage en meubles et immeubles <add facs="#c3-p2-l30"
+                        place="bottom">par succession, donation, legs et autrement</add> leur sera
+                     et demeurera</l>
+                  <l facs="#c3-p2-l28">propre et aux leurs <del>de chacun côté</del> seulement.</l>
+               </p>
+               <p>
+                  <note facs="#c3-p2-l31" place="margin">Rayé de l'autre part et cy à droit huit
+                     mots comme nuls</note>
+               </p>
+               <p>
+                  <l facs="#c3-p2-l29">Ledit <rs type="person" ref="#MB">futur époux</rs> a doué et
+                     doue ladite future</l>
+                  <l facs="#c3-p3-l1"><rs type="person" ref="#FMB">épouse</rs> de la somme de
+                        <measure type="douaire" quantity="150" unit="livres" corresp="#FMB">cent
+                        cinquante livre</measure> de douaire</l>
+                  <l facs="#c3-p3-l2">préfix une fois payés dont elle jouira sitôt qu’il aura lieu,
+                     sans</l>
+                  <l facs="#c3-p3-l3">être tenue d’en faire la demande en justice.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p3-l4">Le survivant desdits <rs type="person" ref="#FMB #MB">futurs
+                        époux</rs> aura et prendra par preciput</l>
+                  <l facs="#c3-p3-l5">et avant partage faire de la communauté lesdits meubles</l>
+                  <l facs="#c3-p3-l6">d’icelle qu’il voudra choisir suivant la prisée
+                     d’inventaire</l>
+                  <l facs="#c3-p3-l7">et sans crue jusqu’à concurrence de la somme de <measure
+                        type="preciput" quantity="100" unit="livres" corresp="#MB #FMB">cent
+                        livres</measure></l>
+                  <l facs="#c3-p3-l8">ou ladite somme en deniers comptants au choix dudit
+                     survivant</l>
+                  <l facs="#c3-p3-l9">reciproquement.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p3-l10">Le remploy de propres sera fait suivant la coutume de
+                     Paris</l>
+                  <l facs="#c3-p3-l11">et sera l’action d’iceluy réputé propre et immobiliaire à
+                     chacun</l>
+                  <l facs="#c3-p3-l12">desdits <rs type="person" ref="#FMB #MB">futurs époux</rs>
+                     qui aura droit de l’exercer et aux leurs</l>
+                  <l facs="#c3-p3-l13">seulement.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p3-l14">Sera permis à ladite <rs type="person" ref="#FMB">future
+                        épouse</rs> et aux enfants qui naitront</l>
+                  <l facs="#c3-p3-l15">dudit mariage en renonceant à ladite communauté de
+                     reprendre</l>
+                  <l facs="#c3-p3-l16">franchement et quittement icelle tout ce que ladite <rs
+                        type="person" ref="#FMB">future épouse</rs></l>
+                  <l facs="#c3-p3-l17">aura apporté audit mariage ensemble tout ce qui luy sera</l>
+                  <l facs="#c3-p3-l18">avenu et écheu pendant iceluy en meubles et immeubles</l>
+                  <l facs="#c3-p3-l19">par succession, donnation, legs ou autrement, même ladite</l>
+                  <l facs="#c3-p3-l20"><rs type="person" ref="#FMB">future épouse</rs> ses douaire
+                     et preciput tels que dessus sans être</l>
+                  <l facs="#c3-p3-l21">par elle ny sesdits enfants tenus d’aucunes dettes et
+                     hypothèques</l>
+                  <l facs="#c3-p3-l22">de ladite communauté encore qu’elle y eu parlé, s’y fut
+                     obligée</l>
+                  <l facs="#c3-p3-l23">ou y eu été condamnée dont audit cas elle et sesdits</l>
+                  <l facs="#c3-p3-l24">enfants seront acquittés, garantis et indemnisés par ledit
+                     futur</l>
+                  <l facs="#c3-p3-l25"><rs type="person" ref="#MB">époux</rs> et ses biens sur
+                     lesquels pour raison <unclear cert="low">dudit […]</unclear></l>
+                  <l facs="#c3-p3-l26">autre clause du présent contrat <unclear cert="medium">il y
+                        aura hipotèque</unclear> de</l>
+                  <l facs="#c3-p3-l27">ce jour d’huy.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p3-l28">Et voulant lesdits <rs type="person" ref="#MB #FMB">futurs
+                        époux</rs> se donner des preuves</l>
+                  <l facs="#c3-p3-l29">de la singulière amitié et estime qu’ils ont dit se porter
+                     ils</l>
+                  <l facs="#c3-p4-l1">se sont par ces presentes fait donnation entre vifs pure et
+                     simple et</l>
+                  <l facs="#c3-p4-l2">irrevocable l’un à l’autre et au survivant d’eux ; ce accepté
+                        <add facs="#c3-p4-l2b" place="margin">pour led survivant</add></l>
+                  <l facs="#c3-p4-l3">par lesdits <rs type="person" ref="#FMB #MB">futurs époux</rs>
+                     respectivement elle de luy authorisée</l>
+                  <l facs="#c3-p4-l4">en tant que besoin et que faire ce peut, de tout les biens
+                     meubles</l>
+                  <l facs="#c3-p4-l5">acquets et conquets immeubles propres et autre qui</l>
+                  <l facs="#c3-p4-l6">se trouveront appartenir au premier mourant desdits <rs
+                        type="person" ref="#FMB #MB">futurs époux</rs></l>
+                  <l facs="#c3-p4-l7">au jour de son décès, à quelque somme ils se trouveront monter
+                     et</l>
+                  <l facs="#c3-p4-l8">en quelque lieux ils soient situés, pour par ledit
+                     survivant</l>
+                  <l facs="#c3-p4-l9">jouir, faire et disposer du tout en pleine propriété comme</l>
+                  <l facs="#c3-p4-l10">bon lui semblera et de chose luy appartenants,</l>
+                  <l facs="#c3-p4-l11">pourvu toutes fois qu’au jour du décès dudit premier
+                     mourant</l>
+                  <l facs="#c3-p4-l12">desdits <rs type="person" ref="#MB #FMB">futurs époux</rs> il
+                     n’y ai aucun enfant <add place="margin">vivant</add> nés et à naitre dudit</l>
+                  <l facs="#c3-p4-l13">futur mariage mais si aucun il y avait et qu’ils viennent à
+                     décéder</l>
+                  <l facs="#c3-p4-l14">en minorité sans avoir valablement disposé de leurs biens</l>
+                  <l facs="#c3-p4-l15">ou quittance pourvu par mariage sans laisser de postérité</l>
+                  <l facs="#c3-p4-l16">légitime, auquel cas ladite donnation reprendra sa force</l>
+                  <l facs="#c3-p4-l17">en vertu comme auparavant et s’il n’y avait point eu</l>
+                  <l facs="#c3-p4-l18">d’enfant dudit mariage.</l>
+               </p>
+               <p>
+                  <l facs="#c3-p4-l19">Car ainsy et pour faire insinuer ces présentes lesdites</l>
+                  <l facs="#c3-p4-l20">parties ont fait et constitué pour les procureurs le</l>
+                  <l facs="#c3-p4-l21">porteur des presentes luy en donnant pouvoir. Promettant,</l>
+                  <l facs="#c3-p4-l22">obligeant, renonceant fait ce jour à <placeName ref="#Paris"
+                        >Paris</placeName>en l’étude le</l>
+                  <l facs="#c3-p4-l23"><date when="1750-06-16">seize juin mil sept cent
+                        cinquante</date> après midy.</l>
+                  <l facs="#c3-p4-l24">Et ont signé :</l>
+               </p>
+            </div>
+            <div type="signatures">
+               <signed facs="#c3-p4-l25" corresp="#FMB">Françoise Marguerite Blaut</signed>
+               <signed facs="#c3-p4-l26" corresp="#MB">Michel Brice</signed>
+               <signed facs="#c3-p4-l27" corresp="#JD">Damaz</signed>
+               <signed facs="#c3-p4-l28" corresp="#AT">Tulou</signed>
+               <signed facs="#c3-p4-l29" corresp="#JJM">Morel</signed>
+               <signed facs="#c3-p4-l30" corresp="#Lescuyer">Lescuyer</signed>
+               <signed facs="#c3-p4-l31" corresp="#LC">Clemandot</signed>
+               <signed facs="#c3-p4-l32" corresp="#MMi">Marie Migourdin</signed>
+               <signed facs="#c3-p4-l33" corresp="#Andrieu">Andrieu</signed>
+            </div>
+         </body>
+      </text>
+   </TEI>
+</teiCorpus>
