@@ -277,8 +277,8 @@
                         <!-- Présentation du projet de recherche dans lequel s'inscrit l'édition numérique -->
                         <div>
                             <h2>Les ouvrières en linge à Paris au XVIIIème siècle : de la grisette à la marchande lingère</h2>
-                            <p>Qui sont les ouvrières en linge ? Ces femmes, ici identifiées uniquement par leur profession semblent totalement absentes des dictionnaires commerciaux et des statuts de corporations. 
-                                Elles ne constituent pas un corps de métiers reconnu, et ne paraissent pas liées officiellement à une autre communauté de 
+                            <p>Qui sont les ouvrières en linge ? Ces femmes, ici identifiées uniquement par leur profession, semblent totalement absentes des dictionnaires commerciaux et des statuts de corporations. 
+                                Elles ne constituent pas un corps de métier reconnu, et ne paraissent pas liées officiellement à une communauté de 
                                 métier. Aucune étude historique ne leur est consacrée, bien qu’elles soient régulièrement mentionnées dans des ouvrages traitant du 
                                 travail, des femmes et de la criminalité à Paris entre le XVIIe et le XIXe siècle.</p>
                             <h3>Dans la littérature...</h3>
@@ -288,27 +288,27 @@
                                 Certains, comme Louis-Sébastien Mercier, louent leur travail assidu et admirent ce qu’ils perçoivent comme un esprit libre des contraintes bourgeoises, et donc charmant. 
                                 D’autres voient en elles des femmes dénaturées, masculines, arrachées à leur rôle naturel de femmes et donc dépourvues de toute grâce et féminité. Mais la définition ne couvre jamais le sujet de 
                                 leur activité à proprement parler. Quelles sont leurs compétences ? En quoi consiste leur travail ? La réponse à ces questions, qui parait peut-être évidente à leurs contemporains, est toujours absente. 
-                                La seule activité à laquelle elles sont associées est la prostitution. La première mention des ouvrières en linge dans <i>Tableau de Paris</i> de Mercier est dans la rubrique intitulée : les matrones.</p>
+                                La seule activité à laquelle elles sont associées est la prostitution. La première mention des ouvrières en linge dans le <i>Tableau de Paris</i> de Mercier est dans la rubrique intitulée : les matrones.</p>
                             <p>Les mentions d’ouvrières en linge dans la littérature des XVIIIe et XIXe siècles renvoient à une perception profondément ancrée du travail des femmes et de leur solitude dans l’espace urbain. 
-                                l'ouvrière en linge symbolise la jeune fille du peuple qui, par un concours de circonstances plus ou moins rocambolesques, se retrouve seule et doit travailler pour subvenir à ses besoins. 
+                                L'ouvrière en linge symbolise la jeune fille du peuple qui, par un concours de circonstances plus ou moins rocambolesques, se retrouve seule et doit travailler pour subvenir à ses besoins. 
                                 Dans les représentations iconographiques comme dans les écrits, elles sont un objet d’admiration et de désir pour les hommes qui les côtoient. Elles se trouvent souvent dans des situations de 
                                 grande fragilité, contraintes de choisir entre la misère et le vice. Dans le roman <i>Magdeleine la Repentie</i> d’E.L. Guérin, publié en 1837, le personnage principal, employée comme ouvrière en linge, 
-                                doit quitter son logement pour échapper aux avances de son employeur5. Le conte d’Alfred de Musset, <i>Mimi Pinson, profil de grisette</i> paru en 1845 raconte la rencontre de deux jeunes hommes avec 
+                                doit quitter son logement pour échapper aux avances de son employeur. Le conte d’Alfred de Musset, <i>Mimi Pinson, profil de grisette</i>, paru en 1845, raconte la rencontre de deux jeunes hommes avec 
                                 leur voisine ouvrière en linge, Mimi Pinson, qui doit mettre son seul bien, sa robe, en gage pour survivre.</p>
                             <h3>Dans l'historiographie...</h3>
                             <p>Les travaux d’historiens qui font mention d’ouvrières en linge semblent confirmer l’image proposée par les écrits des XVIIIe et XIXe siècles. Nombreuses sont les jeunes femmes qui, 
                                 arrêtées pour vol ou pour avoir fait commerce de leurs charmes, déclarent comme profession celle d’ouvrière en linge. Misère, fragilité et criminalité sont-elles le lot de toutes les ouvrières en linge ? 
                                 Des données additionnelles nous invitent à nuancer le cliché figé dans le temps de l’inévitable précarité de ces femmes. 
                                 Sabine Juratic remarque par exemple la situation économique tout à fait confortable d’un certain nombre d’entre elles à la fin de leur vie. Les situations domestique, professionnelle et économique de ces ouvrières 
-                                sont en réalité beaucoup plus variées que celle présentée dans la littérature et généralement acceptée par les historiens. A partir d’un échantillon de contrats passés entre 1730 et 1789, nous nous évertuerons
-                                à définir les rapports qu’elles entretiennent avec les corps d’arts et métiers du secteur du textile et de l’habillement. En trouvant les principaux employeurs de ces ouvrières, nous parviendrons peut-être à mieux évaluer 
-                                leur niveau de compétence, et ainsi leurs parcours d’apprentissage. Nous souhaitons grâce à ce travail proposer une définition de ce métier, et d’en réaliser un portrait plus nuancé.</p>
+                                sont en réalité beaucoup plus variées que celles présentées dans la littérature et généralement acceptées par les historiens. A partir d’un échantillon de contrats de mariage passés entre 1730 et 1789, nous nous évertuerons
+                                à définir les rapports qu’elles entretiennent avec les corps d’arts et métiers du secteur du textile et de l’habillement. En reconstituant leurs réseaux de relation, nous parviendrons peut-être à mieux évaluer 
+                                leur niveau de compétence, et ainsi leurs parcours d’apprentissage. Nous souhaitons grâce à ce travail proposer une définition neuve de ce métier, et d’en réaliser un portrait plus nuancé.</p>
                             <h2>Présentation de l'édition numérique</h2>
                             <p><xsl:value-of select="//sourceDesc/p"/><xsl:text> </xsl:text>
                             <xsl:value-of select="//projectDesc/p"/></p>
                             <h3>Règles de transcription et de normalisation</h3>
                             <p><xsl:value-of select="//normalization/p"/></p>
-                            <p>Dans le cadre des versions fac-similé, les éléments biffés ont également été rayés, tandis que les éléments incertains ont été mis entre crochets. 
+                            <p>Dans le cadre des versions fac-similé, les éléments biffés ont été rayés, tandis que les éléments incertains ont été mis entre crochets. 
                                 Les ajouts marginaux ont quant à eux été insérés dans le corps du texte pour en faciliter la lecture.</p>
                         </div>
                         <div>
